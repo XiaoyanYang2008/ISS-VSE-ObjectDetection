@@ -1505,7 +1505,9 @@ class simple_parser:
 
             for line in f:
                 line_split = line.strip().split(',')
-                (filename, x1, y1, x2, y2, class_name) = line_split
+                (filename, x1, y1, x2, y2, class_name, videoname, frameid) = line_split
+                if filename=='filename':
+                    continue
 
                 if class_name not in classes_count:
                     classes_count[class_name] = 1
@@ -1955,7 +1957,7 @@ class FasterRCNNModel:
 
     def test(self, parser):
 
-        bbox_threshold = 0.6
+        bbox_threshold = 0.65
         visualise = True
 
 

@@ -471,7 +471,7 @@ class data_generators:
         return g
 
     @staticmethod
-    def get_anchor_gt(all_img_data, class_count, C, img_length_calc_function, backend, mode='train'):
+    def get_anchor_gt(all_img_data, class_count, C :Config, img_length_calc_function, backend, mode='train'):
 
         # The following line is not useful with Python 3.5, it is kept for the legacy
         # all_img_data = sorted(all_img_data)
@@ -998,6 +998,8 @@ class lossers:
     @staticmethod
     def class_loss_cls(y_true, y_pred):
         return lambda_cls_class * K.mean(categorical_crossentropy(y_true[0, :, :], y_pred[0, :, :]))
+        ## ValueError: Index out of range using input dim 2; input has only 2 dims for 'loss_1/dense_class_21_loss/strided_slice' (op: 'StridedSlice') with input shapes: [?,?], [3], [3], [3] and with computed input tensors: input[3] = <1 1 1>.
+
 
 
 class FixedBatchNormalization(Layer):
@@ -1725,20 +1727,20 @@ class SimpleResNet:
 
     @staticmethod
     def rpn(base_layers, num_anchors):
-        # base_layers: Tensor("activation_39/Relu:0", shape=(?, ?, ?, 1024), dtype=float32)
-        # num_anchors: 9
+        ## base_layers: Tensor("activation_39/Relu:0", shape=(?, ?, ?, 1024), dtype=float32)
+        ## num_anchors: 9
 
         x = Convolution2D(512, (3, 3), padding='same', activation='relu', kernel_initializer='normal',
                           name='rpn_conv1')(base_layers)
-        ## x :
+        ## x : Tensor("rpn_conv1/Relu:0", shape=(?, ?, ?, 512), dtype=float32)
 
         x_class = Convolution2D(num_anchors, (1, 1), activation='sigmoid', kernel_initializer='uniform',
                                 name='rpn_out_class')(x)
-
+        ## x_class: Tensor("rpn_out_class/Sigmoid:0", shape=(?, ?, ?, 9), dtype=float32)
 
         x_regr = Convolution2D(num_anchors * 4, (1, 1), activation='linear', kernel_initializer='zero',
                                name='rpn_out_regress')(x)
-
+        ## x_regr: Tensor("rpn_out_regress/BiasAdd:0", shape=(?, ?, ?, 36), dtype=float32)
 
 
         return [x_class, x_regr, base_layers]
@@ -1768,15 +1770,24 @@ class SimpleResNet:
 
 
         out = SimpleResNet.classifier_layers(out_roi_pool, input_shape=input_shape, trainable=True)
+        ## out: Tensor("avg_pool/Reshape_1:0", shape=(1, 64, 1, 1, 2048), dtype=float32)
 
         # out = TimeDistributed(Flatten())(out)
         out = Flatten()(out)
+        ## out: Tensor("flatten/Reshape:0", shape=(1, 131072), dtype=float32)
+        ## due to non TimeDistributed(Flatten())
+        ## ValueError: `TimeDistributed` Layer should be passed an `input_shape ` with at least 3 dimensions, received: [1, 131072]
 
-        # out_class = TimeDistributed(Dense(nb_classes, activation='softmax', kernel_initializer='zero'),
-        #                             name='dense_class_{}'.format(nb_classes))(out)
-        out_class = Dense(nb_classes, activation='softmax', kernel_initializer='zero',
+        ## ValueError: Index out of range using input dim 2; input has only 2 dims for 'loss_1/dense_class_21_loss/strided_slice' (op: 'StridedSlice') with input shapes: [?,?], [3], [3], [3] and with computed input tensors: input[3] = <1 1 1>.
+
+
+        out_class = TimeDistributed(Dense(nb_classes, activation='softmax', kernel_initializer='zero'),
                                     name='dense_class_{}'.format(nb_classes))(out)
+        ## out_class:
 
+        # out_class = Dense(nb_classes, activation='softmax', kernel_initializer='zero',
+        #                             name='dense_class_{}'.format(nb_classes))(out)
+        ## out_class: Tensor("dense_class_21/Softmax:0", shape=(1, 21), dtype=float32)
 
         # note: no regression target for bg class
         # out_regr = TimeDistributed(Dense(4 * (nb_classes - 1), activation='linear', kernel_initializer='zero'),
@@ -1794,11 +1805,16 @@ class SimpleResNet:
         # compile times on theano tend to be very high, so we use smaller ROI pooling regions to workaround
         # (hence a smaller stride in the region that follows the ROI pool)
         if K.backend() == 'tensorflow':
-            x = ResNet.conv_block_td(x, 3, [512, 512, 2048], stage=5, block='a', input_shape=input_shape,
-                                     strides=(2, 2),
-                                     trainable=trainable)
+            ## x = ResNet.conv_block(x, 3, [512, 512, 2048], stage=5, block='a', input_shape=input_shape,
+            ##                         strides=(2, 2),
+            ##                         trainable=trainable)
             ## For non TD call, we get following error.
             ## ValueError: Input 0 of layer res5a_branch2a is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: [1, 64, 14, 14, 1024]
+
+            x = ResNet.conv_block_td(x, 3, [512, 512, 2048], stage=5, block='a', input_shape=input_shape,
+                                    strides=(2, 2),
+                                    trainable=trainable)
+            # x: Tensor("activation_42/Relu:0", shape=(1, 64, 7, 7, 2048), dtype=float32)
 
 
         elif K.backend() == 'theano':
@@ -1806,11 +1822,19 @@ class SimpleResNet:
                                      strides=(1, 1),
                                      trainable=trainable)
 
-        x = SimpleResNet.identity_block(x, 3, [512, 512, 2048], stage=5, block='b', trainable=trainable)
-        x = SimpleResNet.identity_block(x, 3, [512, 512, 2048], stage=5, block='c', trainable=trainable)
-        # x = TimeDistributed(AveragePooling2D((7, 7)), name='avg_pool')(x)
-        x = AveragePooling2D((7, 7), name='avg_pool')(x)
+        ## x = SimpleResNet.identity_block(x, 3, [512, 512, 2048], stage=5, block='b', trainable=trainable)
+        ## ValueError: Input 0 of layer res5b_branch2a is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: [1, 64, 7, 7, 2048]
 
+        x = ResNet.identity_block_td(x, 3, [512, 512, 2048], stage=5, block='b', trainable=trainable)
+        # x: Tensor("activation_45/Relu:0", shape=(1, 64, 7, 7, 2048), dtype=float32)
+
+        x = ResNet.identity_block_td(x, 3, [512, 512, 2048], stage=5, block='c', trainable=trainable)
+        # x: Tensor("activation_48/Relu:0", shape=(1, 64, 7, 7, 2048), dtype=float32)
+
+        ## x = AveragePooling2D((7, 7), name='avg_pool')(x)
+        ## ValueError: Input 0 of layer avg_pool is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: [1, 64, 7, 7, 2048]
+
+        x = TimeDistributed(AveragePooling2D((7, 7)), name='avg_pool')(x)
 
         return x
 

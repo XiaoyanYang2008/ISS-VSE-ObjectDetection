@@ -13,6 +13,7 @@ import pprint
 import sys
 import time
 import numpy as np
+import pandas as pd
 from optparse import OptionParser
 import pickle
 
@@ -1772,8 +1773,10 @@ class SimpleResNet:
         out = SimpleResNet.classifier_layers(out_roi_pool, input_shape=input_shape, trainable=True)
         ## out: Tensor("avg_pool/Reshape_1:0", shape=(1, 64, 1, 1, 2048), dtype=float32)
 
-        # out = TimeDistributed(Flatten())(out)
-        out = Flatten()(out)
+        out = TimeDistributed(Flatten())(out)
+        ## out: Tensor("time_distributed/Reshape_2:0", shape=(1, 64, 2048), dtype=float32)
+
+        # out = Flatten()(out)
         ## out: Tensor("flatten/Reshape:0", shape=(1, 131072), dtype=float32)
         ## due to non TimeDistributed(Flatten())
         ## ValueError: `TimeDistributed` Layer should be passed an `input_shape ` with at least 3 dimensions, received: [1, 131072]
@@ -1783,7 +1786,7 @@ class SimpleResNet:
 
         out_class = TimeDistributed(Dense(nb_classes, activation='softmax', kernel_initializer='zero'),
                                     name='dense_class_{}'.format(nb_classes))(out)
-        ## out_class:
+        ## out_class: Tensor("time_distributed/Reshape_2:0", shape=(1, 64, 2048), dtype=float32)
 
         # out_class = Dense(nb_classes, activation='softmax', kernel_initializer='zero',
         #                             name='dense_class_{}'.format(nb_classes))(out)
@@ -1794,6 +1797,7 @@ class SimpleResNet:
         #                            name='dense_regress_{}'.format(nb_classes))(out)
         out_regr = Dense(4 * (nb_classes - 1), activation='linear', kernel_initializer='zero',
                                    name='dense_regress_{}'.format(nb_classes))(out)
+        ## Tensor("dense_regress_21/BiasAdd:0", shape=(1, 64, 80), dtype=float32)
 
         return [out_class, out_regr]
 
@@ -1818,7 +1822,7 @@ class SimpleResNet:
 
 
         elif K.backend() == 'theano':
-            x = SimpleResNet.conv_block(x, 3, [512, 512, 2048], stage=5, block='a', input_shape=input_shape,
+            x = ResNet.conv_block_td(x, 3, [512, 512, 2048], stage=5, block='a', input_shape=input_shape,
                                      strides=(1, 1),
                                      trainable=trainable)
 
@@ -2027,6 +2031,111 @@ class vgg16:
 
         return [out_class, out_regr]
 
+class cvatParser:
+
+    def __init__(self):
+        print("cvatParser initialized.")
+
+    @staticmethod
+    def cvat_video_to_simple_csv():
+        annot_path = './data/annotations'
+        videos_path = './data/videos'
+        images_path = './data/images'
+
+        annots = [os.path.join(annot_path, s) for s in os.listdir(annot_path)]
+        idx = 0
+        df = pd.DataFrame(columns=['filename', 'x1', 'y1', 'x2', 'y2', 'class_name', 'video_name', 'frame'])
+
+        for annot in annots:
+            print(' ')
+            print('Processing annotation file:', annot)
+            try:
+                idx += 1
+
+                et = ET.parse(annot)
+                root = et.getroot()
+                element_source = root.find('.//source')
+                video_name = element_source.text
+                video_name_simple = video_name.replace(' ', '-')
+                stop_frame = root.find('.//stop_frame')
+                element_tracks = root.findall('.//track')
+
+                for track in element_tracks:
+                    warned = False
+                    class_name = track.attrib['label']
+                    track_id = track.attrib['id']
+
+                    print('label:', class_name)
+                    boxes = track.findall('box')
+                    print('frames:')
+                    for box in boxes:
+
+                        box_att = box.attrib
+                        frame = box_att['frame']
+                        is_keyframe = box_att['keyframe']
+                        x1 = box_att['xtl']
+                        y1 = box_att['ytl']
+                        x2 = box_att['xbr']
+                        y2 = box_att['ybr']
+                        outside = box_att['outside']
+
+                        if is_keyframe == '1':
+                            key_x2 = x2
+                            key_y2 = y2
+                            warned = False
+                        else:
+                            if (key_x2 == x2 and key_y2 == y2 and outside == '0'):
+                                # to avoid lost tracked annotations. e.g. forgot to annotate during interpolation.
+                                if not warned:
+                                    print(' ')
+                                    print('WARN: label:', class_name, ', track_id:', track_id,
+                                          ', maybe lose tracking from keyframe: ', frame)
+                                    warned = True
+
+                                continue
+
+                        print(' ', frame, end='')
+                        image_name = cvatParser.makeImageName(frame, images_path, video_name_simple)
+                        df = df.append({'filename': image_name,
+                                        'x1': round(float(x1)),
+                                        'y1': round(float(y1)),
+                                        'x2': round(float(x2)),
+                                        'y2': round(float(y2)),
+                                        'class_name': class_name,
+                                        'video_name': video_name,
+                                        'frame': frame}, ignore_index=True)
+
+                    print(' ')  # end of frames
+
+            except Exception as e:
+                print('error:', e)
+                continue
+
+            df.to_csv('./training.csv', index=False)
+
+            # every annotation xml file for its own video.
+            print('Dump images:')
+            video_frame = 0
+            video = cv2.VideoCapture(os.path.join(videos_path, video_name))
+            vdf = df[df['video_name'] == video_name]
+            success, image = video.read()
+            while (success):
+
+                if sum(vdf['frame'] == str(video_frame)) > 0:
+                    image_name = cvatParser.makeImageName(str(video_frame), images_path, video_name_simple)
+                    cv2.imwrite(image_name, image)
+                    print(' ', image_name, end='')
+
+                success, image = video.read()
+                video_frame = video_frame + 1
+
+            print(' ')  # Dump images:
+
+        print('done parsing')
+
+    @staticmethod
+    def makeImageName(frame, images_path, video_name_simple):
+        return os.path.join(images_path, video_name_simple + "-F" + frame + ".png")
 
 class FasterRCNNModel:
 
@@ -2314,7 +2423,7 @@ class FasterRCNNModel:
 
     def test(self, parser):
 
-        bbox_threshold = 0.65
+        bbox_threshold = 0.5
         visualise = True
 
 
@@ -2337,6 +2446,8 @@ class FasterRCNNModel:
             nn = ResNet
         elif C.network == 'vgg':
             nn = vgg16
+        elif C.network == 'simple_resnet50':
+            nn = SimpleResNet
             # import keras_frcnn.vgg as nn
 
         # turn off any data augmentation at test time
@@ -2400,10 +2511,11 @@ class FasterRCNNModel:
         class_to_color = {class_mapping[v]: np.random.randint(0, 255, 3) for v in class_mapping}
         C.num_rois = int(options.num_rois)
 
-        if C.network == 'resnet50':
+        if C.network == 'resnet50' or C.network == 'simple_resnet50':
             num_features = 1024
         elif C.network == 'vgg':
             num_features = 512
+
 
         if image_dim_ordering(K) == 'th':
             input_shape_img = (3, None, None)
@@ -2552,7 +2664,7 @@ def main():
     # os.environ["CUDA_VISIBLE_DEVICES"] = "1"  # for GPU 1.
 
     parser = OptionParser()
-    parser.add_option("-m", "--mode", dest="mode", help="train or test")
+    parser.add_option("-m", "--mode", dest="mode", help="train or test or to_simple_parser")
 
     # options for testing
     # parser.add_option("-p", "--path", dest="test_path", help="Path to test data.")
@@ -2599,6 +2711,9 @@ def main():
 
     if options.mode =='test':
         m.test(parser)
+
+    if options.mode =='to_simple_parser':
+        cvatParser.cvat_video_to_simple_csv()
 
 
 if __name__ == '__main__':

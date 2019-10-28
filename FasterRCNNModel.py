@@ -61,7 +61,7 @@ class Config:
         self.rot_90 = False
 
         # anchor box scales
-        self.anchor_box_scales = [128, 256, 512]
+        self.anchor_box_scales = [64, 128, 256, 512]
 
         # anchor box ratios
         self.anchor_box_ratios = [[1, 1], [1. / math.sqrt(2), 2. / math.sqrt(2)],
@@ -2049,6 +2049,9 @@ class cvatParser:
         for annot in annots:
             print(' ')
             print('Processing annotation file:', annot)
+            # if annot != './data/annotations/0814 080540.xml':
+            #     continue
+
             try:
                 idx += 1
 
@@ -2068,6 +2071,8 @@ class cvatParser:
                     print('label:', class_name)
                     boxes = track.findall('box')
                     print('frames:')
+                    key_x2 = 0
+                    key_y2 = 0
                     for box in boxes:
 
                         box_att = box.attrib
@@ -2079,12 +2084,16 @@ class cvatParser:
                         y2 = box_att['ybr']
                         outside = box_att['outside']
 
+                        if float(x2)-float(x1) < 64 and float(y2)-float(y1) < 64:
+                            print('X', frame, end='')
+                            continue
+
                         if is_keyframe == '1':
                             key_x2 = x2
                             key_y2 = y2
                             warned = False
                         else:
-                            if (key_x2 == x2 and key_y2 == y2 and outside == '0'):
+                            if (key_x2 == x2 and key_y2 == y2 and is_keyframe == '0'):
                                 # to avoid lost tracked annotations. e.g. forgot to annotate during interpolation.
                                 if not warned:
                                     print(' ')
@@ -2108,7 +2117,8 @@ class cvatParser:
                     print(' ')  # end of frames
 
             except Exception as e:
-                print('error:', e)
+                print(' ')
+                print('ERROR:', e)
                 continue
 
             df.to_csv('./training.csv', index=False)
@@ -2140,7 +2150,7 @@ class cvatParser:
 class FasterRCNNModel:
 
     def __init__(self):
-        self.number_anchors = 9
+        # self.number_anchors = 9
         print("instance initialized.")
 
     # start Training here.
@@ -2423,7 +2433,7 @@ class FasterRCNNModel:
 
     def test(self, parser):
 
-        bbox_threshold = 0.5
+        bbox_threshold = 0.1
         visualise = True
 
 
@@ -2556,7 +2566,7 @@ class FasterRCNNModel:
 
 
 
-        for idx, img_name in enumerate(sorted(os.listdir(img_path))):
+        for idx, img_name in enumerate(os.listdir(img_path)): # sorted()
             if not img_name.lower().endswith(('.bmp', '.jpeg', '.jpg', '.png', '.tif', '.tiff')):
                 continue
             print(img_name)
@@ -2653,10 +2663,13 @@ class FasterRCNNModel:
                                   (textOrg[0] + retval[0] + 5, textOrg[1] - retval[1] - 5), (255, 255, 255), -1)
                     cv2.putText(img, textLabel, textOrg, cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 1)
 
-            print('Elapsed time = {}'.format(time.time() - st))
-            print(all_dets)
-            cv2.imshow('img', img)
-            cv2.waitKey(0)
+            if len(all_dets) > 0:
+                print('Elapsed time = {}'.format(time.time() - st))
+                print(all_dets)
+                cv2.imshow('img', img)
+                cv2.waitKey(0)
+            else:
+                print("Checked ", img_name, ' lapsed: {}'.format(time.time() - st))
         # cv2.imwrite('./results_imgs/{}.png'.format(idx),img)
 
 
@@ -2686,7 +2699,7 @@ def main():
                       default='resnet50')
     parser.add_option("--hf", dest="horizontal_flips",
                       help="Augment with horizontal flips in training. (Default=false).", action="store_true",
-                      default=True)
+                      default=False)
     parser.add_option("--vf", dest="vertical_flips",
                       help="Augment with vertical flips in training. (Default=false).", action="store_true",
                       default=False)

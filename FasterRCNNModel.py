@@ -28,7 +28,8 @@ from tensorflow.keras import Sequential
 from tensorflow.keras import optimizers
 from tensorflow.keras.regularizers import l2
 
-from tensorflow.keras.layers import Input, Add, Dense, Activation, Flatten, Convolution2D, MaxPooling2D, BatchNormalization
+from tensorflow.keras.layers import Input, Add, Dense, Activation, Flatten, Convolution2D, MaxPooling2D, \
+    BatchNormalization
 from tensorflow.keras.layers import ZeroPadding2D, AveragePooling2D, TimeDistributed
 from tensorflow.keras.layers import Layer, InputSpec
 from tensorflow.keras.losses import categorical_crossentropy
@@ -472,7 +473,7 @@ class data_generators:
         return g
 
     @staticmethod
-    def get_anchor_gt(all_img_data, class_count, C :Config, img_length_calc_function, backend, mode='train'):
+    def get_anchor_gt(all_img_data, class_count, C: Config, img_length_calc_function, backend, mode='train'):
 
         # The following line is not useful with Python 3.5, it is kept for the legacy
         # all_img_data = sorted(all_img_data)
@@ -1002,7 +1003,6 @@ class lossers:
         ## ValueError: Index out of range using input dim 2; input has only 2 dims for 'loss_1/dense_class_21_loss/strided_slice' (op: 'StridedSlice') with input shapes: [?,?], [3], [3], [3] and with computed input tensors: input[3] = <1 1 1>.
 
 
-
 class FixedBatchNormalization(Layer):
 
     def __init__(self, epsilon=1e-3, axis=-1,
@@ -1491,6 +1491,7 @@ class ResNet:
 
         return x
 
+
 '''Simple ResNet50 model for Keras.
 # Reference:
 - [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
@@ -1603,19 +1604,20 @@ class SimpleResNet:
         conv_name_base = 'res' + str(stage) + block + '_branch'
         bn_name_base = 'bn' + str(stage) + block + '_branch'
 
-        if input_shape==None:
+        if input_shape == None:
             x = Convolution2D(nb_filter1, (1, 1), strides=strides, name=conv_name_base + '2a', trainable=trainable)(
                 input_tensor)
         else:
             print('tensor-shape', input_tensor)
-            x = Convolution2D(nb_filter1, (1, 1), strides=strides, input_shape=input_shape, name=conv_name_base + '2a', trainable=trainable)(
+            x = Convolution2D(nb_filter1, (1, 1), strides=strides, input_shape=input_shape, name=conv_name_base + '2a',
+                              trainable=trainable)(
                 input_tensor)
 
         # x = Convolution2D(nb_filter1, (1, 1), strides=strides, name=conv_name_base + '2a', trainable=trainable)(
         #     input_tensor)
 
         # x = FixedBatchNormalization(axis=bn_axis, name=bn_name_base + '2a')(x)
-        x = BatchNormalization(axis=bn_axis, name=bn_name_base + '2a' )(x)
+        x = BatchNormalization(axis=bn_axis, name=bn_name_base + '2a')(x)
 
         x = Activation('relu')(x)
 
@@ -1633,7 +1635,7 @@ class SimpleResNet:
         shortcut = Convolution2D(nb_filter3, (1, 1), strides=strides, name=conv_name_base + '1', trainable=trainable)(
             input_tensor)
         # shortcut = FixedBatchNormalization(axis=bn_axis, name=bn_name_base + '1')(shortcut)
-        shortcut = BatchNormalization(axis=bn_axis, name=bn_name_base + '1' )(shortcut)
+        shortcut = BatchNormalization(axis=bn_axis, name=bn_name_base + '1')(shortcut)
 
         x = Add()([x, shortcut])
         x = Activation('relu')(x)
@@ -1743,7 +1745,6 @@ class SimpleResNet:
                                name='rpn_out_regress')(x)
         ## x_regr: Tensor("rpn_out_regress/BiasAdd:0", shape=(?, ?, ?, 36), dtype=float32)
 
-
         return [x_class, x_regr, base_layers]
 
     @staticmethod
@@ -1751,7 +1752,6 @@ class SimpleResNet:
         # base_layers: Tensor("activation_39/Relu:0", shape=(?, ?, ?, 1024), dtype=float32)
         # input_rois: Tensor("input_2:0", shape=(?, ?, 4), dtype=float32)
         # num_rois: 64
-
 
         # compile times on theano tend to be very high, so we use smaller ROI pooling regions to workaround
 
@@ -1769,7 +1769,6 @@ class SimpleResNet:
         out_roi_pool = RoiPoolingConv(pooling_regions, num_rois)([base_layers, input_rois])
         # out_roi_pool: Tensor("roi_pooling_conv/transpose:0", shape=(1, 64, 14, 14, 1024), dtype=float32)
 
-
         out = SimpleResNet.classifier_layers(out_roi_pool, input_shape=input_shape, trainable=True)
         ## out: Tensor("avg_pool/Reshape_1:0", shape=(1, 64, 1, 1, 2048), dtype=float32)
 
@@ -1783,7 +1782,6 @@ class SimpleResNet:
 
         ## ValueError: Index out of range using input dim 2; input has only 2 dims for 'loss_1/dense_class_21_loss/strided_slice' (op: 'StridedSlice') with input shapes: [?,?], [3], [3], [3] and with computed input tensors: input[3] = <1 1 1>.
 
-
         out_class = TimeDistributed(Dense(nb_classes, activation='softmax', kernel_initializer='zero'),
                                     name='dense_class_{}'.format(nb_classes))(out)
         ## out_class: Tensor("time_distributed/Reshape_2:0", shape=(1, 64, 2048), dtype=float32)
@@ -1796,7 +1794,7 @@ class SimpleResNet:
         # out_regr = TimeDistributed(Dense(4 * (nb_classes - 1), activation='linear', kernel_initializer='zero'),
         #                            name='dense_regress_{}'.format(nb_classes))(out)
         out_regr = Dense(4 * (nb_classes - 1), activation='linear', kernel_initializer='zero',
-                                   name='dense_regress_{}'.format(nb_classes))(out)
+                         name='dense_regress_{}'.format(nb_classes))(out)
         ## Tensor("dense_regress_21/BiasAdd:0", shape=(1, 64, 80), dtype=float32)
 
         return [out_class, out_regr]
@@ -1804,7 +1802,6 @@ class SimpleResNet:
     @staticmethod
     def classifier_layers(x, input_shape, trainable=False):
         # x or out_roi_pool: Tensor("roi_pooling_conv/transpose:0", shape=(1, 64, 14, 14, 1024), dtype=float32)
-
 
         # compile times on theano tend to be very high, so we use smaller ROI pooling regions to workaround
         # (hence a smaller stride in the region that follows the ROI pool)
@@ -1816,8 +1813,8 @@ class SimpleResNet:
             ## ValueError: Input 0 of layer res5a_branch2a is incompatible with the layer: expected ndim=4, found ndim=5. Full shape received: [1, 64, 14, 14, 1024]
 
             x = ResNet.conv_block_td(x, 3, [512, 512, 2048], stage=5, block='a', input_shape=input_shape,
-                                    strides=(2, 2),
-                                    trainable=trainable)
+                                     strides=(2, 2),
+                                     trainable=trainable)
             # x: Tensor("activation_42/Relu:0", shape=(1, 64, 7, 7, 2048), dtype=float32)
 
 
@@ -1863,7 +1860,7 @@ class simple_parser:
             for line in f:
                 line_split = line.strip().split(',')
                 (filename, x1, y1, x2, y2, class_name, videoname, frameid) = line_split
-                if filename=='filename':
+                if filename == 'filename':
                     continue
 
                 if class_name not in classes_count:
@@ -2031,6 +2028,7 @@ class vgg16:
 
         return [out_class, out_regr]
 
+
 class cvatParser:
 
     def __init__(self):
@@ -2084,7 +2082,7 @@ class cvatParser:
                         y2 = box_att['ybr']
                         outside = box_att['outside']
 
-                        if float(x2)-float(x1) < 64 and float(y2)-float(y1) < 64:
+                        if float(x2) - float(x1) < 64 and float(y2) - float(y1) < 64:
                             print('X', frame, end='')
                             continue
 
@@ -2147,6 +2145,7 @@ class cvatParser:
     def makeImageName(frame, images_path, video_name_simple):
         return os.path.join(images_path, video_name_simple + "-F" + frame + ".png")
 
+
 class FasterRCNNModel:
 
     def __init__(self):
@@ -2157,8 +2156,6 @@ class FasterRCNNModel:
     def train(self, parser):
 
         sys.setrecursionlimit(40000)
-
-
 
         (options, args) = parser.parse_args()
 
@@ -2431,11 +2428,10 @@ class FasterRCNNModel:
 
         print('Training complete, exiting.')
 
-    def test(self, parser):
+    def test_video(self, parser):
 
-        bbox_threshold = 0.1
+        bbox_threshold = 0.66
         visualise = True
-
 
         sys.setrecursionlimit(40000)
         os.environ["TF_FORCE_GPU_ALLOW_GROWTH"] = "true"
@@ -2467,6 +2463,205 @@ class FasterRCNNModel:
 
         img_path = options.train_path
 
+        class_mapping, class_to_color, format_img, get_real_coordinates, model_classifier_only, model_rpn = self.testing_init(
+            C, nn, options)
+
+        all_imgs = []
+
+        classes = {}
+
+        img_name = img_path
+        if not img_name.lower().endswith(('.avi', '.mp4')):
+            print(img_name, " is not video. Testing exists.")
+            exit(0)
+
+            # continue
+
+        print(img_name)
+        st = time.time()
+        # filepath = os.path.join(img_path, img_name)
+
+        # img = cv2.imread(filepath)
+        vs = cv2.VideoCapture(img_name)
+        ok, img = vs.read()
+        fps = vs.get(cv2.CAP_PROP_FPS)
+        video_width = int(vs.get(cv2.CAP_PROP_FRAME_WIDTH))
+        video_height = int(vs.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        fourcc = cv2.VideoWriter_fourcc(*'H264')
+
+        outfile = img_name + '-detected.mp4'
+        video_out = cv2.VideoWriter(outfile, fourcc, fps, (video_width, video_height), True)
+        idx = 0
+        while ok:
+            st = time.time()
+            all_dets = self.testing_draw(C, bbox_threshold, class_mapping, class_to_color, format_img,
+                                         get_real_coordinates, img, model_classifier_only, model_rpn)
+
+            if len(all_dets) > 0:
+                print('Elapsed time = {}'.format(time.time() - st))
+                print(all_dets)
+                # cv2.imshow('img', img)
+                # cv2.waitKey(0)
+            else:
+                print("Checked ", img_name, ' ', idx, ' lapsed: {}'.format(time.time() - st))
+
+            # cv2.imwrite('./results_imgs/{}.png'.format(idx),img)
+            # sudo apt-get install ffmpeg x264 libx264-dev
+            video_out.write(img)
+            ok, img = vs.read()
+            idx += 1
+
+        print('Video detected completed. Please check, ', outfile)
+        video_out.release()
+        vs.release()
+
+    def test(self, parser):
+
+        bbox_threshold = 0.6
+        visualise = True
+
+        sys.setrecursionlimit(40000)
+        os.environ["TF_FORCE_GPU_ALLOW_GROWTH"] = "true"
+        os.environ["CUDA_VISIBLE_DEVICES"] = "1"  # for GPU 1.
+
+        (options, args) = parser.parse_args()
+
+        if not options.train_path:  # if filename is not given
+            parser.error('Error: path to test data must be specified. Pass --path to command line')
+
+        config_output_filename = options.config_filename
+
+        with open(config_output_filename, 'rb') as f_in:
+            C = pickle.load(f_in)
+
+        if C.network == 'resnet50':
+            # import keras_frcnn.resnet as nn
+            nn = ResNet
+        elif C.network == 'vgg':
+            nn = vgg16
+        elif C.network == 'simple_resnet50':
+            nn = SimpleResNet
+            # import keras_frcnn.vgg as nn
+
+        # turn off any data augmentation at test time
+        C.use_horizontal_flips = False
+        C.use_vertical_flips = False
+        C.rot_90 = False
+
+        img_path = options.train_path
+
+        class_mapping, class_to_color, format_img, get_real_coordinates, model_classifier_only, model_rpn = self.testing_init(
+            C, nn, options)
+
+        all_imgs = []
+
+        classes = {}
+
+        for idx, img_name in enumerate(os.listdir(img_path)):  # sorted()
+            if not img_name.lower().endswith(('.bmp', '.jpeg', '.jpg', '.png', '.tif', '.tiff')):
+                continue
+            print(img_name)
+            st = time.time()
+            filepath = os.path.join(img_path, img_name)
+
+            img = cv2.imread(filepath)
+
+            all_dets = self.testing_draw(C, bbox_threshold, class_mapping, class_to_color, format_img,
+                                         get_real_coordinates, img, model_classifier_only, model_rpn)
+
+            if len(all_dets) > 0:
+                print('Elapsed time = {}'.format(time.time() - st))
+                print(all_dets)
+                cv2.imshow('img', img)
+                cv2.waitKey(0)
+            else:
+                print("Checked ", img_name, ' lapsed: {}'.format(time.time() - st))
+        # cv2.imwrite('./results_imgs/{}.png'.format(idx),img)
+
+    def testing_draw(self, C, bbox_threshold, class_mapping, class_to_color, format_img, get_real_coordinates, img,
+                     model_classifier_only, model_rpn):
+        X, ratio = format_img(img, C)
+        if image_dim_ordering(K) == 'tf':
+            X = np.transpose(X, (0, 2, 3, 1))
+        # get the feature maps and output from the RPN
+        [Y1, Y2, F] = model_rpn.predict(X)
+        R = roi_helper.rpn_to_roi(Y1, Y2, C, image_dim_ordering(K), overlap_thresh=0.7)
+        # convert from (x1,y1,x2,y2) to (x,y,w,h)
+        R[:, 2] -= R[:, 0]
+        R[:, 3] -= R[:, 1]
+        # apply the spatial pyramid pooling to the proposed regions
+        bboxes = {}
+        probs = {}
+        for jk in range(R.shape[0] // C.num_rois + 1):
+            ROIs = np.expand_dims(R[C.num_rois * jk:C.num_rois * (jk + 1), :], axis=0)
+            if ROIs.shape[1] == 0:
+                break
+
+            if jk == R.shape[0] // C.num_rois:
+                # pad R
+                curr_shape = ROIs.shape
+                target_shape = (curr_shape[0], C.num_rois, curr_shape[2])
+                ROIs_padded = np.zeros(target_shape).astype(ROIs.dtype)
+                ROIs_padded[:, :curr_shape[1], :] = ROIs
+                ROIs_padded[0, curr_shape[1]:, :] = ROIs[0, 0, :]
+                ROIs = ROIs_padded
+
+            [P_cls, P_regr] = model_classifier_only.predict([F, ROIs])
+
+            for ii in range(P_cls.shape[1]):
+
+                if np.max(P_cls[0, ii, :]) < bbox_threshold or np.argmax(P_cls[0, ii, :]) == (P_cls.shape[2] - 1):
+                    continue
+
+                cls_name = class_mapping[np.argmax(P_cls[0, ii, :])]
+
+                if cls_name not in bboxes:
+                    bboxes[cls_name] = []
+                    probs[cls_name] = []
+
+                (x, y, w, h) = ROIs[0, ii, :]
+
+                cls_num = np.argmax(P_cls[0, ii, :])
+                try:
+                    (tx, ty, tw, th) = P_regr[0, ii, 4 * cls_num:4 * (cls_num + 1)]
+                    tx /= C.classifier_regr_std[0]
+                    ty /= C.classifier_regr_std[1]
+                    tw /= C.classifier_regr_std[2]
+                    th /= C.classifier_regr_std[3]
+                    x, y, w, h = roi_helper.apply_regr(x, y, w, h, tx, ty, tw, th)
+                except:
+                    pass
+                bboxes[cls_name].append(
+                    [C.rpn_stride * x, C.rpn_stride * y, C.rpn_stride * (x + w), C.rpn_stride * (y + h)])
+                probs[cls_name].append(np.max(P_cls[0, ii, :]))
+        all_dets = []
+        for key in bboxes:
+            bbox = np.array(bboxes[key])
+
+            new_boxes, new_probs = roi_helper.non_max_suppression_fast(bbox, np.array(probs[key]),
+                                                                       overlap_thresh=0.5)
+            for jk in range(new_boxes.shape[0]):
+                (x1, y1, x2, y2) = new_boxes[jk, :]
+
+                (real_x1, real_y1, real_x2, real_y2) = get_real_coordinates(ratio, x1, y1, x2, y2)
+
+                cv2.rectangle(img, (real_x1, real_y1), (real_x2, real_y2), (
+                    int(class_to_color[key][0]), int(class_to_color[key][1]), int(class_to_color[key][2])), 2)
+
+                textLabel = '{}: {}'.format(key, int(100 * new_probs[jk]))
+                all_dets.append((key, 100 * new_probs[jk]))
+
+                (retval, baseLine) = cv2.getTextSize(textLabel, cv2.FONT_HERSHEY_COMPLEX, 1, 1)
+                textOrg = (real_x1, real_y1 - 0)
+
+                cv2.rectangle(img, (textOrg[0] - 5, textOrg[1] + baseLine - 5),
+                              (textOrg[0] + retval[0] + 5, textOrg[1] - retval[1] - 5), (0, 0, 0), 2)
+                cv2.rectangle(img, (textOrg[0] - 5, textOrg[1] + baseLine - 5),
+                              (textOrg[0] + retval[0] + 5, textOrg[1] - retval[1] - 5), (255, 255, 255), -1)
+                cv2.putText(img, textLabel, textOrg, cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 1)
+        return all_dets
+
+    def testing_init(self, C, nn, options):
         def format_img_size(img, C):
             """ formats the image size based on config """
             img_min_side = float(C.im_size)
@@ -2512,165 +2707,41 @@ class FasterRCNNModel:
             return (real_x1, real_y1, real_x2, real_y2)
 
         class_mapping = C.class_mapping
-
         if 'bg' not in class_mapping:
             class_mapping['bg'] = len(class_mapping)
-
         class_mapping = {v: k for k, v in class_mapping.items()}
         print(class_mapping)
         class_to_color = {class_mapping[v]: np.random.randint(0, 255, 3) for v in class_mapping}
         C.num_rois = int(options.num_rois)
-
         if C.network == 'resnet50' or C.network == 'simple_resnet50':
             num_features = 1024
         elif C.network == 'vgg':
             num_features = 512
-
-
         if image_dim_ordering(K) == 'th':
             input_shape_img = (3, None, None)
             input_shape_features = (num_features, None, None)
         else:
             input_shape_img = (None, None, 3)
             input_shape_features = (None, None, num_features)
-
         img_input = Input(shape=input_shape_img)
         roi_input = Input(shape=(C.num_rois, 4))
         feature_map_input = Input(shape=input_shape_features)
-
         # define the base network (resnet here, can be VGG, Inception, etc)
         shared_layers = nn.nn_base(img_input, trainable=True)
-
         # define the RPN, built on the base layers
         num_anchors = len(C.anchor_box_scales) * len(C.anchor_box_ratios)
         rpn_layers = nn.rpn(shared_layers, num_anchors)
-
         classifier = nn.classifier(feature_map_input, roi_input, C.num_rois, nb_classes=len(class_mapping),
                                    trainable=True)
-
         model_rpn = Model(img_input, rpn_layers)
         model_classifier_only = Model([feature_map_input, roi_input], classifier)
-
         model_classifier = Model([feature_map_input, roi_input], classifier)
-
         print('Loading weights from {}'.format(C.model_path))
         model_rpn.load_weights(C.model_path, by_name=True)
         model_classifier.load_weights(C.model_path, by_name=True)
-
         model_rpn.compile(optimizer='sgd', loss='mse')
         model_classifier.compile(optimizer='sgd', loss='mse')
-
-        all_imgs = []
-
-        classes = {}
-
-
-
-        for idx, img_name in enumerate(os.listdir(img_path)): # sorted()
-            if not img_name.lower().endswith(('.bmp', '.jpeg', '.jpg', '.png', '.tif', '.tiff')):
-                continue
-            print(img_name)
-            st = time.time()
-            filepath = os.path.join(img_path, img_name)
-
-            img = cv2.imread(filepath)
-
-            X, ratio = format_img(img, C)
-
-            if image_dim_ordering(K) == 'tf':
-                X = np.transpose(X, (0, 2, 3, 1))
-
-            # get the feature maps and output from the RPN
-            [Y1, Y2, F] = model_rpn.predict(X)
-
-            R = roi_helper.rpn_to_roi(Y1, Y2, C, image_dim_ordering(K), overlap_thresh=0.7)
-
-            # convert from (x1,y1,x2,y2) to (x,y,w,h)
-            R[:, 2] -= R[:, 0]
-            R[:, 3] -= R[:, 1]
-
-            # apply the spatial pyramid pooling to the proposed regions
-            bboxes = {}
-            probs = {}
-
-            for jk in range(R.shape[0] // C.num_rois + 1):
-                ROIs = np.expand_dims(R[C.num_rois * jk:C.num_rois * (jk + 1), :], axis=0)
-                if ROIs.shape[1] == 0:
-                    break
-
-                if jk == R.shape[0] // C.num_rois:
-                    # pad R
-                    curr_shape = ROIs.shape
-                    target_shape = (curr_shape[0], C.num_rois, curr_shape[2])
-                    ROIs_padded = np.zeros(target_shape).astype(ROIs.dtype)
-                    ROIs_padded[:, :curr_shape[1], :] = ROIs
-                    ROIs_padded[0, curr_shape[1]:, :] = ROIs[0, 0, :]
-                    ROIs = ROIs_padded
-
-                [P_cls, P_regr] = model_classifier_only.predict([F, ROIs])
-
-                for ii in range(P_cls.shape[1]):
-
-                    if np.max(P_cls[0, ii, :]) < bbox_threshold or np.argmax(P_cls[0, ii, :]) == (P_cls.shape[2] - 1):
-                        continue
-
-                    cls_name = class_mapping[np.argmax(P_cls[0, ii, :])]
-
-                    if cls_name not in bboxes:
-                        bboxes[cls_name] = []
-                        probs[cls_name] = []
-
-                    (x, y, w, h) = ROIs[0, ii, :]
-
-                    cls_num = np.argmax(P_cls[0, ii, :])
-                    try:
-                        (tx, ty, tw, th) = P_regr[0, ii, 4 * cls_num:4 * (cls_num + 1)]
-                        tx /= C.classifier_regr_std[0]
-                        ty /= C.classifier_regr_std[1]
-                        tw /= C.classifier_regr_std[2]
-                        th /= C.classifier_regr_std[3]
-                        x, y, w, h = roi_helper.apply_regr(x, y, w, h, tx, ty, tw, th)
-                    except:
-                        pass
-                    bboxes[cls_name].append(
-                        [C.rpn_stride * x, C.rpn_stride * y, C.rpn_stride * (x + w), C.rpn_stride * (y + h)])
-                    probs[cls_name].append(np.max(P_cls[0, ii, :]))
-
-            all_dets = []
-
-            for key in bboxes:
-                bbox = np.array(bboxes[key])
-
-                new_boxes, new_probs = roi_helper.non_max_suppression_fast(bbox, np.array(probs[key]),
-                                                                            overlap_thresh=0.5)
-                for jk in range(new_boxes.shape[0]):
-                    (x1, y1, x2, y2) = new_boxes[jk, :]
-
-                    (real_x1, real_y1, real_x2, real_y2) = get_real_coordinates(ratio, x1, y1, x2, y2)
-
-                    cv2.rectangle(img, (real_x1, real_y1), (real_x2, real_y2), (
-                        int(class_to_color[key][0]), int(class_to_color[key][1]), int(class_to_color[key][2])), 2)
-
-                    textLabel = '{}: {}'.format(key, int(100 * new_probs[jk]))
-                    all_dets.append((key, 100 * new_probs[jk]))
-
-                    (retval, baseLine) = cv2.getTextSize(textLabel, cv2.FONT_HERSHEY_COMPLEX, 1, 1)
-                    textOrg = (real_x1, real_y1 - 0)
-
-                    cv2.rectangle(img, (textOrg[0] - 5, textOrg[1] + baseLine - 5),
-                                  (textOrg[0] + retval[0] + 5, textOrg[1] - retval[1] - 5), (0, 0, 0), 2)
-                    cv2.rectangle(img, (textOrg[0] - 5, textOrg[1] + baseLine - 5),
-                                  (textOrg[0] + retval[0] + 5, textOrg[1] - retval[1] - 5), (255, 255, 255), -1)
-                    cv2.putText(img, textLabel, textOrg, cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 1)
-
-            if len(all_dets) > 0:
-                print('Elapsed time = {}'.format(time.time() - st))
-                print(all_dets)
-                cv2.imshow('img', img)
-                cv2.waitKey(0)
-            else:
-                print("Checked ", img_name, ' lapsed: {}'.format(time.time() - st))
-        # cv2.imwrite('./results_imgs/{}.png'.format(idx),img)
+        return class_mapping, class_to_color, format_img, get_real_coordinates, model_classifier_only, model_rpn
 
 
 def main():
@@ -2682,7 +2753,7 @@ def main():
     # options for testing
     # parser.add_option("-p", "--path", dest="test_path", help="Path to test data.")
     # parser.add_option("-n", "--num_rois", type="int", dest="num_rois",
-                      # help="Number of ROIs per iteration. Higher means more memory use.", default=32)
+    # help="Number of ROIs per iteration. Higher means more memory use.", default=32)
     # parser.add_option("--config_filename", dest="config_filename", help=
     # "Location to read the metadata related to the training (generated when training).",
     #                   default="config.pickle")
@@ -2722,10 +2793,13 @@ def main():
     if options.mode == 'train':
         m.train(parser)
 
-    if options.mode =='test':
+    if options.mode == 'test':
         m.test(parser)
 
-    if options.mode =='to_simple_parser':
+    if options.mode == 'test-video':
+        m.test_video(parser)
+
+    if options.mode == 'to_simple_parser':
         cvatParser.cvat_video_to_simple_csv()
 
 

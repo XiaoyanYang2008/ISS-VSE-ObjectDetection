@@ -2430,7 +2430,7 @@ class FasterRCNNModel:
 
     def test_video(self, parser):
 
-        bbox_threshold = 0.66
+        bbox_threshold = 0.8
         visualise = True
 
         sys.setrecursionlimit(40000)
@@ -2522,7 +2522,7 @@ class FasterRCNNModel:
 
         sys.setrecursionlimit(40000)
         os.environ["TF_FORCE_GPU_ALLOW_GROWTH"] = "true"
-        os.environ["CUDA_VISIBLE_DEVICES"] = "1"  # for GPU 1.
+        # os.environ["CUDA_VISIBLE_DEVICES"] = "1"  # for GPU 1.
 
         (options, args) = parser.parse_args()
 
@@ -2787,7 +2787,12 @@ def main():
                       help="Input path for weights. If not specified, will try to load default weights provided by keras.",
                       default='./model_frcnn.hdf5')
 
+    parser.add_option("--gpu", dest="gpu", help="Which GPU to run? default to 0",
+                      default='0')
+
     (options, args) = parser.parse_args()
+
+    os.environ["CUDA_VISIBLE_DEVICES"] = options.gpu   # for GPU selection
 
     m = FasterRCNNModel()
     if options.mode == 'train':

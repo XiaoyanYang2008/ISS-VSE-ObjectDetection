@@ -2488,6 +2488,8 @@ class FasterRCNNModel:
         video_width = int(vs.get(cv2.CAP_PROP_FRAME_WIDTH))
         video_height = int(vs.get(cv2.CAP_PROP_FRAME_HEIGHT))
         fourcc = cv2.VideoWriter_fourcc(*'H264')
+        ## sudo apt-get install ffmpeg x264 libx264-dev
+        ## to enable x264 compression.
 
         outfile = img_name + '-detected.mp4'
         video_out = cv2.VideoWriter(outfile, fourcc, fps, (video_width, video_height), True)
@@ -2505,8 +2507,6 @@ class FasterRCNNModel:
             else:
                 print("Checked ", img_name, ' ', idx, ' lapsed: {}'.format(time.time() - st))
 
-            # cv2.imwrite('./results_imgs/{}.png'.format(idx),img)
-            # sudo apt-get install ffmpeg x264 libx264-dev
             video_out.write(img)
             ok, img = vs.read()
             idx += 1

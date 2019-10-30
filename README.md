@@ -17,6 +17,7 @@ if GPU not working in tensorflow: sudo apt install cuda-10-0 nvidia-driver-430
 if cuda-10-0 not found, follows https://www.tensorflow.org/install/gpu#ubuntu_1804_cuda_10
 
 ### Prepare Train images and annotations
+note: install git lfs as per https://git-lfs.github.com/
 1. conda activate rtav
 2. git clone https://github.com/XiaoyanYang2008/ISS-VSE-ObjectDetection.git
 3. cd ISS-VSE-ObjectDetection

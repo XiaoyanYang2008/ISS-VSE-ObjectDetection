@@ -1,0 +1,2262 @@
+# packages in environment at /home/leeseng/anaconda3/envs/rtav:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+_tflow_select             2.1.0                       gpu  
+absl-py                   0.8.0                    py36_0    conda-forge
+alabaster                 0.7.12                   py36_0  
+asn1crypto                0.24.0                   py36_0  
+astor                     0.7.1                      py_0    conda-forge
+astroid                   2.3.1                    py36_0  
+attrs                     19.1.0                   py36_1  
+audioread                 2.1.6                    py36_0    conda-forge
+babel                     2.7.0                      py_0  
+backcall                  0.1.0                    py36_0  
+bleach                    3.1.0                    py36_0  
+bzip2                     1.0.8                h7b6447c_0  
+c-ares                    1.15.0            h516909a_1001    conda-forge
+ca-certificates           2019.9.11            hecc5488_0    conda-forge
+cairo                     1.16.0            h18b612c_1001    conda-forge
+certifi                   2019.9.11                py36_0    conda-forge
+cffi                      1.12.3           py36h2e261b9_0  
+chardet                   3.0.4                 py36_1003  
+cloudpickle               1.2.2                      py_0  
+cryptography              2.7              py36h1ba5d50_0  
+cudatoolkit               10.1.168                      0  
+cudnn                     7.6.0                cuda10.1_0  
+cupti                     10.1.168                      0  
+cycler                    0.10.0                   py36_0  
+cython                    0.29.13          py36he1b5a44_0    conda-forge
+cytoolz                   0.10.0           py36h7b6447c_0  
+dask-core                 2.5.0                      py_0  
+dbus                      1.13.6               he372182_0    conda-forge
+decorator                 4.4.0                    py36_1  
+defusedxml                0.6.0                      py_0  
+docutils                  0.15.2                   py36_0  
+entrypoints               0.3                      py36_0  
+expat                     2.2.6                he6710b0_0  
+ffmpeg                    4.1.3                h167e202_0    conda-forge
+fontconfig                2.13.1            he4413a7_1000    conda-forge
+freetype                  2.9.1                h8a8886c_1  
+fribidi                   1.0.5                h7b6447c_0  
+future                    0.18.0                   pypi_0    pypi
+gast                      0.3.2                      py_0    conda-forge
+geos                      3.7.1                he6710b0_0  
+gettext                   0.19.8.1             hd7bead4_3  
+giflib                    5.1.4                h14c3975_1  
+glib                      2.58.3            h6f030ca_1002    conda-forge
+gmp                       6.1.2                h6c8ec71_1  
+gnutls                    3.6.5             hd3a4fd2_1002    conda-forge
+google-pasta              0.1.7                      py_0    conda-forge
+graphite2                 1.3.13               h23475e2_0  
+graphviz                  2.40.1               h0f2764d_1    conda-forge
+grpcio                    1.23.0           py36he9ae1f9_0    conda-forge
+gst-plugins-base          1.14.5               h0935bb2_0    conda-forge
+gstreamer                 1.14.5               h36ae1b5_0    conda-forge
+gym                       0.15.3                   pypi_0    pypi
+h5py                      2.10.0          nompi_py36h513d04c_100    conda-forge
+harfbuzz                  2.4.0                h37c48d4_1    conda-forge
+hdf5                      1.10.5          nompi_h3c11f04_1103    conda-forge
+icu                       58.2                 h9c2bf20_1  
+idna                      2.8                      py36_0  
+imageio                   2.5.0                    py36_0  
+imagesize                 1.1.0                    py36_0  
+imgaug                    0.3.0                      py_0    conda-forge
+imutils                   0.5.3                    py36_0    conda-forge
+ipykernel                 5.1.2            py36h39e3cac_0  
+ipython                   7.8.0            py36h5ca1d4c_0    conda-forge
+ipython_genutils          0.2.0                    py36_0  
+ipywidgets                7.5.1                      py_0  
+isort                     4.3.21                   py36_0  
+jasper                    1.900.1              hd497a04_4  
+jedi                      0.15.1                   py36_0  
+jeepney                   0.4.1                      py_0  
+jinja2                    2.10.1                   py36_0  
+joblib                    0.13.2                   py36_0  
+jpeg                      9c                h14c3975_1001    conda-forge
+jsonschema                3.0.2                    py36_0  
+jupyter                   1.0.0                    py36_7  
+jupyter_client            5.3.3                    py36_1  
+jupyter_console           6.0.0                    py36_0  
+jupyter_core              4.5.0                      py_0  
+keras-applications        1.0.8                      py_1    conda-forge
+keras-base                2.2.4                    py36_0  
+keras-gpu                 2.2.4                         0  
+keras-preprocessing       1.1.0                      py_0    conda-forge
+keyring                   18.0.0                   py36_0  
+kiwisolver                1.1.0            py36he6710b0_0  
+lame                      3.100             h14c3975_1001    conda-forge
+lazy-object-proxy         1.4.2            py36h7b6447c_0  
+libblas                   3.8.0               12_openblas    conda-forge
+libcblas                  3.8.0               12_openblas    conda-forge
+libedit                   3.1.20181209         hc058e9b_0  
+libffi                    3.2.1                hd88cf55_4  
+libflac                   1.3.1             hf484d3e_1002    conda-forge
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran-ng            7.3.0                hdf63c60_0  
+libiconv                  1.15                 h63c8f33_5  
+liblapack                 3.8.0               12_openblas    conda-forge
+liblapacke                3.8.0               12_openblas    conda-forge
+libogg                    1.3.2                h7b6447c_0  
+libopenblas               0.3.7                h6e990d7_1    conda-forge
+libpng                    1.6.37               hbc83047_0  
+libprotobuf               3.9.2                h8b12597_0    conda-forge
+librosa                   0.7.0                      py_0    conda-forge
+libsndfile                1.0.28            hf484d3e_1000    conda-forge
+libsodium                 1.0.16               h1bed415_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libtiff                   4.0.10               h2733197_2  
+libtool                   2.4.6                h7b6447c_5  
+libuuid                   2.32.1            h14c3975_1000    conda-forge
+libvorbis                 1.3.6                h7b6447c_0  
+libwebp                   1.0.1                h8e7db2f_0  
+libxcb                    1.13                 h1bed415_1  
+libxml2                   2.9.9                hea5a465_1  
+llvmlite                  0.29.0           py36hd408876_0  
+markdown                  3.1.1                      py_0    conda-forge
+markupsafe                1.1.1            py36h7b6447c_0  
+matplotlib                3.1.1            py36h5429711_0  
+mccabe                    0.6.1                    py36_1  
+mistune                   0.8.4            py36h7b6447c_0  
+mock                      3.0.5                    py36_0    conda-forge
+nbconvert                 5.6.0                    py36_1  
+nbformat                  4.4.0                    py36_0  
+ncurses                   6.1                  he6710b0_1  
+nettle                    3.4.1             h1bed415_1002    conda-forge
+networkx                  2.3                        py_0  
+notebook                  6.0.1                    py36_0  
+numba                     0.45.1           py36h962f231_0  
+numpy                     1.17.2           py36h95a1406_0    conda-forge
+numpydoc                  0.9.1                      py_0  
+olefile                   0.46                     py36_0  
+opencv                    4.1.0            py36h3aa1047_6    conda-forge
+openh264                  1.8.0             hdbcaa40_1000    conda-forge
+openssl                   1.1.1c               h516909a_0    conda-forge
+packaging                 19.2                       py_0  
+pandas                    0.25.1           py36hb3f55d8_0    conda-forge
+pandoc                    2.2.3.2                       0  
+pandocfilters             1.4.2                    py36_1  
+pango                     1.42.4               ha030887_1    conda-forge
+parso                     0.5.1                      py_0  
+pathlib                   1.0.1                      py_1    conda-forge
+pcre                      8.43                 he6710b0_0  
+pexpect                   4.7.0                    py36_0  
+pickleshare               0.7.5                    py36_0  
+pillow                    6.1.0            py36h34e0f95_0  
+pip                       19.3                     pypi_0    pypi
+pixman                    0.38.0               h7b6447c_0  
+prometheus_client         0.7.1                      py_0  
+prompt_toolkit            2.0.9                    py36_0  
+protobuf                  3.9.2            py36he1b5a44_1    conda-forge
+psutil                    5.6.3            py36h7b6447c_0  
+ptyprocess                0.6.0                    py36_0  
+pycodestyle               2.5.0                    py36_0  
+pycparser                 2.19                     py36_0  
+pydot                     1.4.1                 py36_1001    conda-forge
+pyflakes                  2.1.1                    py36_0  
+pyglet                    1.3.2                    pypi_0    pypi
+pygments                  2.4.2                      py_0  
+pylint                    2.4.2                    py36_0  
+pyopenssl                 19.0.0                   py36_0  
+pyparsing                 2.4.2                      py_0  
+pyqt                      5.9.2            py36h05f1152_2  
+pyrsistent                0.15.4           py36h7b6447c_0  
+pysocks                   1.7.1                    py36_0  
+pysoundfile               0.10.2                  py_1001    conda-forge
+python                    3.6.9                h265db76_0  
+python-dateutil           2.8.0                    py36_0  
+pytz                      2019.2                     py_0  
+pywavelets                1.0.3            py36hdd07704_1  
+pyyaml                    5.1.2            py36h516909a_0    conda-forge
+pyzmq                     18.1.0           py36he6710b0_0  
+qt                        5.9.7                h52cfd70_2    conda-forge
+qtawesome                 0.6.0                      py_0  
+qtconsole                 4.5.5                      py_0  
+qtpy                      1.9.0                      py_0  
+readline                  7.0                  h7b6447c_5  
+requests                  2.22.0                   py36_0  
+resampy                   0.2.2                      py_0    conda-forge
+rope                      0.14.0                     py_0  
+scikit-image              0.15.0           py36he6710b0_0  
+scikit-learn              0.21.3           py36hcdab131_0    conda-forge
+scipy                     1.3.1            py36h921218d_2    conda-forge
+secretstorage             3.1.1                    py36_0  
+send2trash                1.5.0                    py36_0  
+setuptools                41.2.0                   py36_0  
+shapely                   1.6.4            py36h86c5351_0  
+sip                       4.19.8           py36hf484d3e_0  
+six                       1.12.0                   py36_0  
+snowballstemmer           1.9.1                      py_0  
+sphinx                    2.2.0                      py_0  
+sphinxcontrib-applehelp   1.0.1                      py_0  
+sphinxcontrib-devhelp     1.0.1                      py_0  
+sphinxcontrib-htmlhelp    1.0.2                      py_0  
+sphinxcontrib-jsmath      1.0.1                      py_0  
+sphinxcontrib-qthelp      1.0.2                      py_0  
+sphinxcontrib-serializinghtml 1.1.3                      py_0  
+spyder                    3.3.6                    py36_0    conda-forge
+spyder-kernels            0.5.2                    py36_0  
+sqlite                    3.29.0               h7b6447c_0  
+tbb                       2019.4               hfd86e86_0  
+tensorboard               1.14.0                   py36_0    conda-forge
+tensorflow                1.14.0          gpu_py36h3fb9ad6_0  
+tensorflow-base           1.14.0          gpu_py36he45bfe2_0  
+tensorflow-estimator      1.14.0           py36h5ca1d4c_0    conda-forge
+tensorflow-gpu            1.14.0               h0d30ee6_0  
+termcolor                 1.1.0                      py_2    conda-forge
+terminado                 0.8.2                    py36_0  
+testpath                  0.4.2                    py36_0  
+tk                        8.6.8                hbc83047_0  
+toolz                     0.10.0                     py_0  
+tornado                   6.0.3            py36h7b6447c_0  
+traitlets                 4.3.2                    py36_0  
+typed-ast                 1.4.0            py36h7b6447c_0  
+urllib3                   1.24.2                   py36_0  
+wcwidth                   0.1.7                    py36_0  
+webencodings              0.5.1                    py36_1  
+werkzeug                  0.16.0                     py_0    conda-forge
+wheel                     0.33.6                   py36_0  
+widgetsnbextension        3.5.1                    py36_0  
+wrapt                     1.11.2           py36h7b6447c_0  
+wurlitzer                 1.0.3                    py36_0  
+x264                      1!152.20180806       h14c3975_0    conda-forge
+xorg-kbproto              1.0.7             h14c3975_1002    conda-forge
+xorg-libice               1.0.10               h516909a_0    conda-forge
+xorg-libsm                1.2.3             h84519dc_1000    conda-forge
+xorg-libx11               1.6.8                h516909a_0    conda-forge
+xorg-libxext              1.3.4                h516909a_0    conda-forge
+xorg-libxpm               3.5.12            h516909a_1002    conda-forge
+xorg-libxrender           0.9.10            h516909a_1002    conda-forge
+xorg-libxt                1.1.5             h516909a_1003    conda-forge
+xorg-renderproto          0.11.1            h14c3975_1002    conda-forge
+xorg-xextproto            7.3.0             h14c3975_1002    conda-forge
+xorg-xproto               7.0.31            h14c3975_1007    conda-forge
+xz                        5.2.4                h14c3975_4  
+yaml                      0.1.7             h14c3975_1001    conda-forge
+zeromq                    4.3.1                he6710b0_3  
+zlib                      1.2.11               h7b6447c_3  
+zstd                      1.3.7                h0b5b093_0  
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+instance initialized.
+{0: 'LINE_ZIGZAG', 1: 'W_AHEAD', 2: 'HUMP', 3: 'W_HUMP', 4: 'W_X-ING', 5: 'GANTRY_BARRIER', 6: 'VTL_GREEN', 7: 'VTL_AMBER', 8: 'HTL_GREEN', 9: 'LINE_DOUBLE_YELLOW', 10: 'LINE_HORIZONTAL_PEDESTRIAN', 11: 'bg'}
+WARNING:tensorflow:From /home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/keras/initializers.py:143: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/keras/initializers.py:119: calling RandomUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/tensorflow/python/autograph/converters/directives.py:117: The name tf.image.resize_images is deprecated. Please use tf.image.resize instead.
+
+Loading weights from rm-model.hdf5
+2019-11-01 23:21:33.773321: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-11-01 23:21:33.816871: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3408000000 Hz
+2019-11-01 23:21:33.818653: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5586f3ffd7e0 executing computations on platform Host. Devices:
+2019-11-01 23:21:33.818838: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-11-01 23:21:33.824638: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2019-11-01 23:21:33.851868: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-01 23:21:33.852898: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.8475
+pciBusID: 0000:02:00.0
+2019-11-01 23:21:33.856410: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2019-11-01 23:21:33.906587: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2019-11-01 23:21:33.958526: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10
+2019-11-01 23:21:33.963498: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10
+2019-11-01 23:21:34.023732: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2019-11-01 23:21:34.029158: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10
+2019-11-01 23:21:34.111443: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-11-01 23:21:34.111616: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-01 23:21:34.112324: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-01 23:21:34.113164: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-11-01 23:21:34.113466: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2019-11-01 23:21:34.191982: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-01 23:21:34.192007: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2019-11-01 23:21:34.192152: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2019-11-01 23:21:34.193596: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-01 23:21:34.194051: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-01 23:21:34.194484: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-11-01 23:21:34.194863: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:40] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2019-11-01 23:21:34.195291: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7604 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1080, pci bus id: 0000:02:00.0, compute capability: 6.1)
+2019-11-01 23:21:34.198268: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5586f4bd1ad0 executing computations on platform CUDA. Devices:
+2019-11-01 23:21:34.198294: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX 1080, Compute Capability 6.1
+data/test/1-test-video.avi
+OpenCV: FFMPEG: tag 0x34363248/'H264' is not supported with codec id 27 and format 'mp4 / MP4 (MPEG-4 Part 14)'
+OpenCV: FFMPEG: fallback to use tag 0x31637661/'avc1'
+2019-11-01 23:21:38.268908: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-11-01 23:21:41.007970: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+Elapsed time = 4.7329511642456055
+[{'x1': 32, 'x2': 240, 'y1': 256, 'y2': 304, 'class': 'HUMP', 'prob': 0.81490463}]
+/home/leeseng/anaconda3/envs/rtav/lib/python3.6/site-packages/sklearn/metrics/ranking.py:528: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+HUMP AP: nan
+mAP = nan
+Elapsed time = 0.6797940731048584
+[{'x1': 624, 'x2': 672, 'y1': 304, 'y2': 352, 'class': 'LINE_ZIGZAG', 'prob': 0.8499377}, {'x1': 48, 'x2': 192, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.8932779}]
+HUMP AP: nan
+LINE_ZIGZAG AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   2  lapsed: 0.6795651912689209
+Elapsed time = 0.6592252254486084
+[{'x1': 624, 'x2': 688, 'y1': 320, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.93366027}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.3333333333333333
+mAP = nan
+Elapsed time = 0.67386794090271
+[{'x1': 32, 'x2': 160, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.9960439}, {'x1': 16, 'x2': 240, 'y1': 256, 'y2': 304, 'class': 'HUMP', 'prob': 0.8118244}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.5
+mAP = nan
+Elapsed time = 0.6868536472320557
+[{'x1': 16, 'x2': 176, 'y1': 272, 'y2': 320, 'class': 'HUMP', 'prob': 0.91669255}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.6
+mAP = nan
+Elapsed time = 0.689124584197998
+[{'x1': 640, 'x2': 704, 'y1': 320, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.9063502}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.625
+mAP = nan
+Elapsed time = 0.6878657341003418
+[{'x1': 640, 'x2': 704, 'y1': 320, 'y2': 384, 'class': 'LINE_ZIGZAG', 'prob': 0.9646979}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.7619047619047619
+mAP = nan
+Elapsed time = 0.6622312068939209
+[{'x1': 640, 'x2': 704, 'y1': 320, 'y2': 384, 'class': 'LINE_ZIGZAG', 'prob': 0.88980573}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.7777777777777778
+mAP = nan
+Elapsed time = 0.6799860000610352
+[{'x1': 640, 'x2': 720, 'y1': 320, 'y2': 384, 'class': 'LINE_ZIGZAG', 'prob': 0.9081923}, {'x1': 0, 'x2': 160, 'y1': 272, 'y2': 320, 'class': 'HUMP', 'prob': 0.80754936}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.7928571428571429
+mAP = nan
+Elapsed time = 0.6684145927429199
+[{'x1': 640, 'x2': 720, 'y1': 336, 'y2': 416, 'class': 'LINE_ZIGZAG', 'prob': 0.9258996}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8062499999999999
+mAP = nan
+Elapsed time = 0.698796272277832
+[{'x1': 640, 'x2': 720, 'y1': 336, 'y2': 416, 'class': 'LINE_ZIGZAG', 'prob': 0.8121081}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8060606060606061
+mAP = nan
+Checked  data/test/1-test-video.avi   12  lapsed: 0.6647326946258545
+Checked  data/test/1-test-video.avi   13  lapsed: 0.6842291355133057
+Checked  data/test/1-test-video.avi   14  lapsed: 0.6788318157196045
+Checked  data/test/1-test-video.avi   15  lapsed: 0.6924965381622314
+Checked  data/test/1-test-video.avi   16  lapsed: 0.6876122951507568
+Checked  data/test/1-test-video.avi   17  lapsed: 0.6890079975128174
+Checked  data/test/1-test-video.avi   18  lapsed: 0.6754508018493652
+Elapsed time = 0.692091703414917
+[{'x1': 608, 'x2': 656, 'y1': 304, 'y2': 352, 'class': 'LINE_ZIGZAG', 'prob': 0.8152741}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.7740740740740741
+mAP = nan
+Elapsed time = 0.6933245658874512
+[{'x1': 608, 'x2': 656, 'y1': 304, 'y2': 352, 'class': 'LINE_ZIGZAG', 'prob': 0.95427674}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.6842083842083841
+mAP = nan
+Elapsed time = 0.6795291900634766
+[{'x1': 608, 'x2': 672, 'y1': 304, 'y2': 352, 'class': 'LINE_ZIGZAG', 'prob': 0.85552543}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.701017316017316
+mAP = nan
+Checked  data/test/1-test-video.avi   22  lapsed: 0.6938381195068359
+Checked  data/test/1-test-video.avi   23  lapsed: 0.6979794502258301
+Elapsed time = 0.6887967586517334
+[{'x1': 608, 'x2': 672, 'y1': 304, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.96837413}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.7613997113997115
+mAP = nan
+Elapsed time = 0.6885702610015869
+[{'x1': 608, 'x2': 688, 'y1': 304, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.880273}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.770919820919821
+mAP = nan
+Elapsed time = 0.6791343688964844
+[{'x1': 608, 'x2': 688, 'y1': 304, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.88622606}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.7796396414043472
+mAP = nan
+Elapsed time = 0.6850004196166992
+[{'x1': 608, 'x2': 688, 'y1': 304, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.9858209}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8162079983508554
+mAP = nan
+Elapsed time = 0.6825056076049805
+[{'x1': 608, 'x2': 688, 'y1': 304, 'y2': 384, 'class': 'LINE_ZIGZAG', 'prob': 0.8219232}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.817625376572745
+mAP = nan
+Elapsed time = 0.6766149997711182
+[{'x1': 608, 'x2': 688, 'y1': 304, 'y2': 384, 'class': 'LINE_ZIGZAG', 'prob': 0.9731759}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8440273982553395
+mAP = nan
+Elapsed time = 0.6944789886474609
+[{'x1': 608, 'x2': 704, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.88815707}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8479837972485031
+mAP = nan
+Elapsed time = 0.6750810146331787
+[{'x1': 608, 'x2': 688, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.8150088}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8461762368560616
+mAP = nan
+Elapsed time = 0.6764383316040039
+[{'x1': 608, 'x2': 704, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.8549813}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8502529462674979
+mAP = nan
+Elapsed time = 0.6872854232788086
+[{'x1': 624, 'x2': 720, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.979115}, {'x1': 640, 'x2': 688, 'y1': 32, 'y2': 64, 'class': 'HTL_GREEN', 'prob': 0.803542}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8683556721056724
+HTL_GREEN AP: nan
+mAP = nan
+Elapsed time = 0.6831169128417969
+[{'x1': 608, 'x2': 720, 'y1': 320, 'y2': 416, 'class': 'LINE_ZIGZAG', 'prob': 0.98074085}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8831628633950619
+HTL_GREEN AP: nan
+mAP = nan
+Elapsed time = 0.6776547431945801
+[{'x1': 624, 'x2': 720, 'y1': 320, 'y2': 416, 'class': 'LINE_ZIGZAG', 'prob': 0.9647111}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8398636321864309
+HTL_GREEN AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   36  lapsed: 0.6694834232330322
+Checked  data/test/1-test-video.avi   37  lapsed: 0.6580963134765625
+Checked  data/test/1-test-video.avi   38  lapsed: 0.6891310214996338
+Checked  data/test/1-test-video.avi   39  lapsed: 0.6752293109893799
+Checked  data/test/1-test-video.avi   40  lapsed: 0.6688346862792969
+Checked  data/test/1-test-video.avi   41  lapsed: 0.6838722229003906
+Checked  data/test/1-test-video.avi   42  lapsed: 0.6962378025054932
+Checked  data/test/1-test-video.avi   43  lapsed: 0.6869900226593018
+Checked  data/test/1-test-video.avi   44  lapsed: 0.6915216445922852
+Checked  data/test/1-test-video.avi   45  lapsed: 0.6930825710296631
+Checked  data/test/1-test-video.avi   46  lapsed: 0.690054178237915
+Checked  data/test/1-test-video.avi   47  lapsed: 0.6736185550689697
+Checked  data/test/1-test-video.avi   48  lapsed: 0.6928281784057617
+Elapsed time = 0.6929755210876465
+[{'x1': 608, 'x2': 656, 'y1': 304, 'y2': 352, 'class': 'LINE_ZIGZAG', 'prob': 0.8075993}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8386441119976925
+HTL_GREEN AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   50  lapsed: 0.7084982395172119
+Checked  data/test/1-test-video.avi   51  lapsed: 0.6945469379425049
+Checked  data/test/1-test-video.avi   52  lapsed: 0.7176496982574463
+Checked  data/test/1-test-video.avi   53  lapsed: 0.7144765853881836
+Checked  data/test/1-test-video.avi   54  lapsed: 0.6872859001159668
+Checked  data/test/1-test-video.avi   55  lapsed: 0.6924421787261963
+Checked  data/test/1-test-video.avi   56  lapsed: 0.6886031627655029
+Checked  data/test/1-test-video.avi   57  lapsed: 0.7080950736999512
+Elapsed time = 0.6926887035369873
+[{'x1': 624, 'x2': 704, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.9454538}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8446387526749006
+HTL_GREEN AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   59  lapsed: 0.6835579872131348
+Checked  data/test/1-test-video.avi   60  lapsed: 0.6948895454406738
+Elapsed time = 0.7048063278198242
+[{'x1': 624, 'x2': 704, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.94266534}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8500680463063363
+HTL_GREEN AP: nan
+mAP = nan
+Elapsed time = 0.700089693069458
+[{'x1': 624, 'x2': 704, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.8756696}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8373670375504467
+HTL_GREEN AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   63  lapsed: 0.698430061340332
+Checked  data/test/1-test-video.avi   64  lapsed: 0.6714601516723633
+Checked  data/test/1-test-video.avi   65  lapsed: 0.6820662021636963
+Checked  data/test/1-test-video.avi   66  lapsed: 0.7109146118164062
+Checked  data/test/1-test-video.avi   67  lapsed: 0.6881647109985352
+Checked  data/test/1-test-video.avi   68  lapsed: 0.6949357986450195
+Checked  data/test/1-test-video.avi   69  lapsed: 0.7023873329162598
+Elapsed time = 0.7088298797607422
+[{'x1': 144, 'x2': 192, 'y1': 96, 'y2': 144, 'class': 'VTL_GREEN', 'prob': 0.83318216}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8373670375504467
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   71  lapsed: 0.6923372745513916
+Checked  data/test/1-test-video.avi   72  lapsed: 0.6685001850128174
+Checked  data/test/1-test-video.avi   73  lapsed: 0.7117486000061035
+Checked  data/test/1-test-video.avi   74  lapsed: 0.7042727470397949
+Checked  data/test/1-test-video.avi   75  lapsed: 0.6969614028930664
+Checked  data/test/1-test-video.avi   76  lapsed: 0.6955101490020752
+Checked  data/test/1-test-video.avi   77  lapsed: 0.7083332538604736
+Checked  data/test/1-test-video.avi   78  lapsed: 0.6783409118652344
+Elapsed time = 0.7112064361572266
+[{'x1': 608, 'x2': 688, 'y1': 304, 'y2': 384, 'class': 'LINE_ZIGZAG', 'prob': 0.920546}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8405164932775672
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   80  lapsed: 0.6902041435241699
+Elapsed time = 0.6962904930114746
+[{'x1': 608, 'x2': 704, 'y1': 304, 'y2': 384, 'class': 'LINE_ZIGZAG', 'prob': 0.90909976}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8435157502711248
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+mAP = nan
+Elapsed time = 0.7051911354064941
+[{'x1': 608, 'x2': 704, 'y1': 304, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.9525335}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8488109411443804
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+mAP = nan
+Elapsed time = 0.6931583881378174
+[{'x1': 608, 'x2': 704, 'y1': 320, 'y2': 416, 'class': 'LINE_ZIGZAG', 'prob': 0.92729455}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.851458057265366
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   84  lapsed: 0.6950104236602783
+Checked  data/test/1-test-video.avi   85  lapsed: 0.692378044128418
+Checked  data/test/1-test-video.avi   86  lapsed: 0.6906542778015137
+Checked  data/test/1-test-video.avi   87  lapsed: 0.6834237575531006
+Checked  data/test/1-test-video.avi   88  lapsed: 0.6969044208526611
+Checked  data/test/1-test-video.avi   89  lapsed: 0.7046811580657959
+Checked  data/test/1-test-video.avi   90  lapsed: 0.7144153118133545
+Checked  data/test/1-test-video.avi   91  lapsed: 0.6930835247039795
+Checked  data/test/1-test-video.avi   92  lapsed: 0.6813445091247559
+Checked  data/test/1-test-video.avi   93  lapsed: 0.6979525089263916
+Checked  data/test/1-test-video.avi   94  lapsed: 0.6992805004119873
+Elapsed time = 0.7060627937316895
+[{'x1': 592, 'x2': 688, 'y1': 272, 'y2': 288, 'class': 'W_AHEAD', 'prob': 0.886361}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8514888204358855
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   96  lapsed: 0.6926407814025879
+Checked  data/test/1-test-video.avi   97  lapsed: 0.6793041229248047
+Checked  data/test/1-test-video.avi   98  lapsed: 0.6933143138885498
+Elapsed time = 0.6784465312957764
+[{'x1': 592, 'x2': 640, 'y1': 304, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.8520909}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8528822996803493
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Elapsed time = 0.6808714866638184
+[{'x1': 592, 'x2': 656, 'y1': 304, 'y2': 368, 'class': 'LINE_ZIGZAG', 'prob': 0.8942528}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8554097376953353
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   101  lapsed: 0.7092716693878174
+Checked  data/test/1-test-video.avi   102  lapsed: 0.7082290649414062
+Checked  data/test/1-test-video.avi   103  lapsed: 0.6944959163665771
+Checked  data/test/1-test-video.avi   104  lapsed: 0.7082383632659912
+Checked  data/test/1-test-video.avi   105  lapsed: 0.6850490570068359
+Elapsed time = 0.6972033977508545
+[{'x1': 608, 'x2': 672, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.88060325}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8448730363421
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Elapsed time = 0.7021985054016113
+[{'x1': 608, 'x2': 688, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.89597803}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.829847587926307
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Elapsed time = 0.6907613277435303
+[{'x1': 592, 'x2': 672, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.8877256}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8192041711472837
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Elapsed time = 0.7079317569732666
+[{'x1': 608, 'x2': 688, 'y1': 320, 'y2': 400, 'class': 'LINE_ZIGZAG', 'prob': 0.85706073}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   110  lapsed: 0.698986291885376
+Checked  data/test/1-test-video.avi   111  lapsed: 0.6899652481079102
+Checked  data/test/1-test-video.avi   112  lapsed: 0.7056915760040283
+Checked  data/test/1-test-video.avi   113  lapsed: 0.6996102333068848
+Checked  data/test/1-test-video.avi   114  lapsed: 0.7023394107818604
+Elapsed time = 0.700822114944458
+[{'x1': 592, 'x2': 736, 'y1': 288, 'y2': 304, 'class': 'W_AHEAD', 'prob': 0.9213491}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   116  lapsed: 0.6969316005706787
+Checked  data/test/1-test-video.avi   117  lapsed: 0.7001652717590332
+Checked  data/test/1-test-video.avi   118  lapsed: 0.7135570049285889
+Checked  data/test/1-test-video.avi   119  lapsed: 0.6962087154388428
+Checked  data/test/1-test-video.avi   120  lapsed: 0.6953592300415039
+Checked  data/test/1-test-video.avi   121  lapsed: 0.697655439376831
+Checked  data/test/1-test-video.avi   122  lapsed: 0.6966876983642578
+Checked  data/test/1-test-video.avi   123  lapsed: 0.7145652770996094
+Checked  data/test/1-test-video.avi   124  lapsed: 0.7067339420318604
+Checked  data/test/1-test-video.avi   125  lapsed: 0.7021691799163818
+Checked  data/test/1-test-video.avi   126  lapsed: 0.6947319507598877
+Checked  data/test/1-test-video.avi   127  lapsed: 0.6966903209686279
+Checked  data/test/1-test-video.avi   128  lapsed: 0.69077467918396
+Checked  data/test/1-test-video.avi   129  lapsed: 0.6978504657745361
+Checked  data/test/1-test-video.avi   130  lapsed: 0.7081301212310791
+Checked  data/test/1-test-video.avi   131  lapsed: 0.7077052593231201
+Checked  data/test/1-test-video.avi   132  lapsed: 0.7087364196777344
+Checked  data/test/1-test-video.avi   133  lapsed: 0.6857755184173584
+Checked  data/test/1-test-video.avi   134  lapsed: 0.6850612163543701
+Checked  data/test/1-test-video.avi   135  lapsed: 0.7096292972564697
+Checked  data/test/1-test-video.avi   136  lapsed: 0.697573184967041
+Checked  data/test/1-test-video.avi   137  lapsed: 0.7064917087554932
+Checked  data/test/1-test-video.avi   138  lapsed: 0.6979811191558838
+Checked  data/test/1-test-video.avi   139  lapsed: 0.6972625255584717
+Checked  data/test/1-test-video.avi   140  lapsed: 0.7105109691619873
+Checked  data/test/1-test-video.avi   141  lapsed: 0.7106013298034668
+Checked  data/test/1-test-video.avi   142  lapsed: 0.6999020576477051
+Checked  data/test/1-test-video.avi   143  lapsed: 0.6952645778656006
+Checked  data/test/1-test-video.avi   144  lapsed: 0.6926124095916748
+Checked  data/test/1-test-video.avi   145  lapsed: 0.694878101348877
+Checked  data/test/1-test-video.avi   146  lapsed: 0.7069516181945801
+Checked  data/test/1-test-video.avi   147  lapsed: 0.6952321529388428
+Checked  data/test/1-test-video.avi   148  lapsed: 0.7116384506225586
+Checked  data/test/1-test-video.avi   149  lapsed: 0.7037456035614014
+Checked  data/test/1-test-video.avi   150  lapsed: 0.7089557647705078
+Checked  data/test/1-test-video.avi   151  lapsed: 0.7001950740814209
+Checked  data/test/1-test-video.avi   152  lapsed: 0.6995742321014404
+Checked  data/test/1-test-video.avi   153  lapsed: 0.6913039684295654
+Checked  data/test/1-test-video.avi   154  lapsed: 0.6968898773193359
+Checked  data/test/1-test-video.avi   155  lapsed: 0.6917364597320557
+Checked  data/test/1-test-video.avi   156  lapsed: 0.6916961669921875
+Checked  data/test/1-test-video.avi   157  lapsed: 0.6833908557891846
+Checked  data/test/1-test-video.avi   158  lapsed: 0.6946578025817871
+Checked  data/test/1-test-video.avi   159  lapsed: 0.696458101272583
+Checked  data/test/1-test-video.avi   160  lapsed: 0.6970584392547607
+Checked  data/test/1-test-video.avi   161  lapsed: 0.6818540096282959
+Checked  data/test/1-test-video.avi   162  lapsed: 0.7013862133026123
+Checked  data/test/1-test-video.avi   163  lapsed: 0.679711103439331
+Checked  data/test/1-test-video.avi   164  lapsed: 0.6841754913330078
+Checked  data/test/1-test-video.avi   165  lapsed: 0.7119827270507812
+Checked  data/test/1-test-video.avi   166  lapsed: 0.6918039321899414
+Checked  data/test/1-test-video.avi   167  lapsed: 0.686854362487793
+Checked  data/test/1-test-video.avi   168  lapsed: 0.6921117305755615
+Checked  data/test/1-test-video.avi   169  lapsed: 0.6931452751159668
+Checked  data/test/1-test-video.avi   170  lapsed: 0.6855368614196777
+Checked  data/test/1-test-video.avi   171  lapsed: 0.6977612972259521
+Checked  data/test/1-test-video.avi   172  lapsed: 0.6827981472015381
+Checked  data/test/1-test-video.avi   173  lapsed: 0.6868877410888672
+Elapsed time = 0.6853435039520264
+[{'x1': 384, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8089794}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   175  lapsed: 0.6884126663208008
+Checked  data/test/1-test-video.avi   176  lapsed: 0.6877274513244629
+Elapsed time = 0.7041513919830322
+[{'x1': 384, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.82714146}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Elapsed time = 0.6952297687530518
+[{'x1': 384, 'x2': 480, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8045038}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   179  lapsed: 0.7087421417236328
+Checked  data/test/1-test-video.avi   180  lapsed: 0.6870760917663574
+Checked  data/test/1-test-video.avi   181  lapsed: 0.702282190322876
+Checked  data/test/1-test-video.avi   182  lapsed: 0.6871275901794434
+Checked  data/test/1-test-video.avi   183  lapsed: 0.6923093795776367
+Checked  data/test/1-test-video.avi   184  lapsed: 0.6952764987945557
+Checked  data/test/1-test-video.avi   185  lapsed: 0.6970417499542236
+Checked  data/test/1-test-video.avi   186  lapsed: 0.6971409320831299
+Checked  data/test/1-test-video.avi   187  lapsed: 0.6879792213439941
+Checked  data/test/1-test-video.avi   188  lapsed: 0.6906108856201172
+Checked  data/test/1-test-video.avi   189  lapsed: 0.6966536045074463
+Checked  data/test/1-test-video.avi   190  lapsed: 0.6888110637664795
+Checked  data/test/1-test-video.avi   191  lapsed: 0.696295976638794
+Checked  data/test/1-test-video.avi   192  lapsed: 0.7037053108215332
+Checked  data/test/1-test-video.avi   193  lapsed: 0.7140367031097412
+Checked  data/test/1-test-video.avi   194  lapsed: 0.703362226486206
+Checked  data/test/1-test-video.avi   195  lapsed: 0.6891582012176514
+Checked  data/test/1-test-video.avi   196  lapsed: 0.6982710361480713
+Checked  data/test/1-test-video.avi   197  lapsed: 0.7135317325592041
+Checked  data/test/1-test-video.avi   198  lapsed: 0.6837775707244873
+Checked  data/test/1-test-video.avi   199  lapsed: 0.6948859691619873
+Checked  data/test/1-test-video.avi   200  lapsed: 0.6961877346038818
+Checked  data/test/1-test-video.avi   201  lapsed: 0.7022168636322021
+Elapsed time = 0.7051417827606201
+[{'x1': 384, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'LINE_DOUBLE_YELLOW', 'prob': 0.8351732}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   203  lapsed: 0.7058236598968506
+Checked  data/test/1-test-video.avi   204  lapsed: 0.6731266975402832
+Checked  data/test/1-test-video.avi   205  lapsed: 0.7057292461395264
+Checked  data/test/1-test-video.avi   206  lapsed: 0.6858992576599121
+Checked  data/test/1-test-video.avi   207  lapsed: 0.6859099864959717
+Checked  data/test/1-test-video.avi   208  lapsed: 0.6790132522583008
+Checked  data/test/1-test-video.avi   209  lapsed: 0.6854434013366699
+Elapsed time = 0.6930327415466309
+[{'x1': 368, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.82374525}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6888003349304199
+[{'x1': 368, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8321626}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6770801544189453
+[{'x1': 384, 'x2': 480, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8489167}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6889801025390625
+[{'x1': 384, 'x2': 480, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8139317}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6919200420379639
+[{'x1': 384, 'x2': 480, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8393199}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6857476234436035
+[{'x1': 368, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8546506}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6859095096588135
+[{'x1': 368, 'x2': 448, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8549736}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6703765392303467
+[{'x1': 384, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.83049774}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.7039704322814941
+[{'x1': 384, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.84572333}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Elapsed time = 0.6917731761932373
+[{'x1': 384, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8244569}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   220  lapsed: 0.6811738014221191
+Checked  data/test/1-test-video.avi   221  lapsed: 0.6987946033477783
+Elapsed time = 0.689643383026123
+[{'x1': 384, 'x2': 480, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8316279}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   223  lapsed: 0.695676326751709
+Checked  data/test/1-test-video.avi   224  lapsed: 0.6928369998931885
+Checked  data/test/1-test-video.avi   225  lapsed: 0.725522518157959
+Checked  data/test/1-test-video.avi   226  lapsed: 0.6961069107055664
+Checked  data/test/1-test-video.avi   227  lapsed: 0.7073533535003662
+Checked  data/test/1-test-video.avi   228  lapsed: 0.6862351894378662
+Checked  data/test/1-test-video.avi   229  lapsed: 0.688950777053833
+Checked  data/test/1-test-video.avi   230  lapsed: 0.7007286548614502
+Checked  data/test/1-test-video.avi   231  lapsed: 0.6845414638519287
+Checked  data/test/1-test-video.avi   232  lapsed: 0.6765556335449219
+Checked  data/test/1-test-video.avi   233  lapsed: 0.6961395740509033
+Checked  data/test/1-test-video.avi   234  lapsed: 0.6807749271392822
+Checked  data/test/1-test-video.avi   235  lapsed: 0.6974611282348633
+Checked  data/test/1-test-video.avi   236  lapsed: 0.6821157932281494
+Checked  data/test/1-test-video.avi   237  lapsed: 0.6911823749542236
+Checked  data/test/1-test-video.avi   238  lapsed: 0.704491376876831
+Checked  data/test/1-test-video.avi   239  lapsed: 0.6918385028839111
+Checked  data/test/1-test-video.avi   240  lapsed: 0.6947021484375
+Checked  data/test/1-test-video.avi   241  lapsed: 0.7012460231781006
+Checked  data/test/1-test-video.avi   242  lapsed: 0.6969552040100098
+Checked  data/test/1-test-video.avi   243  lapsed: 0.6830027103424072
+Checked  data/test/1-test-video.avi   244  lapsed: 0.7100057601928711
+Checked  data/test/1-test-video.avi   245  lapsed: 0.7052712440490723
+Checked  data/test/1-test-video.avi   246  lapsed: 0.6852436065673828
+Checked  data/test/1-test-video.avi   247  lapsed: 0.6874613761901855
+Checked  data/test/1-test-video.avi   248  lapsed: 0.6786351203918457
+Checked  data/test/1-test-video.avi   249  lapsed: 0.6973426342010498
+Checked  data/test/1-test-video.avi   250  lapsed: 0.6975984573364258
+Checked  data/test/1-test-video.avi   251  lapsed: 0.6854729652404785
+Checked  data/test/1-test-video.avi   252  lapsed: 0.7006568908691406
+Checked  data/test/1-test-video.avi   253  lapsed: 0.6834609508514404
+Checked  data/test/1-test-video.avi   254  lapsed: 0.7038841247558594
+Checked  data/test/1-test-video.avi   255  lapsed: 0.6820657253265381
+Elapsed time = 0.6919407844543457
+[{'x1': 160, 'x2': 240, 'y1': 48, 'y2': 96, 'class': 'W_X-ING', 'prob': 0.91470623}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+mAP = nan
+Elapsed time = 0.6989738941192627
+[{'x1': 144, 'x2': 224, 'y1': 48, 'y2': 96, 'class': 'W_X-ING', 'prob': 0.80610055}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   258  lapsed: 0.680060625076294
+Checked  data/test/1-test-video.avi   259  lapsed: 0.7023530006408691
+Checked  data/test/1-test-video.avi   260  lapsed: 0.6890766620635986
+Checked  data/test/1-test-video.avi   261  lapsed: 0.7011418342590332
+Checked  data/test/1-test-video.avi   262  lapsed: 0.7100894451141357
+Checked  data/test/1-test-video.avi   263  lapsed: 0.7027990818023682
+Checked  data/test/1-test-video.avi   264  lapsed: 0.6744048595428467
+Checked  data/test/1-test-video.avi   265  lapsed: 0.6983869075775146
+Checked  data/test/1-test-video.avi   266  lapsed: 0.6785049438476562
+Checked  data/test/1-test-video.avi   267  lapsed: 0.7161707878112793
+Checked  data/test/1-test-video.avi   268  lapsed: 0.7002089023590088
+Checked  data/test/1-test-video.avi   269  lapsed: 0.6841657161712646
+Checked  data/test/1-test-video.avi   270  lapsed: 0.6861679553985596
+Checked  data/test/1-test-video.avi   271  lapsed: 0.6811184883117676
+Checked  data/test/1-test-video.avi   272  lapsed: 0.7115528583526611
+Checked  data/test/1-test-video.avi   273  lapsed: 0.6834008693695068
+Checked  data/test/1-test-video.avi   274  lapsed: 0.6882724761962891
+Checked  data/test/1-test-video.avi   275  lapsed: 0.7148199081420898
+Checked  data/test/1-test-video.avi   276  lapsed: 0.6925265789031982
+Checked  data/test/1-test-video.avi   277  lapsed: 0.6911957263946533
+Checked  data/test/1-test-video.avi   278  lapsed: 0.6891157627105713
+Checked  data/test/1-test-video.avi   279  lapsed: 0.6971056461334229
+Checked  data/test/1-test-video.avi   280  lapsed: 0.6834516525268555
+Checked  data/test/1-test-video.avi   281  lapsed: 0.6929018497467041
+Checked  data/test/1-test-video.avi   282  lapsed: 0.7022590637207031
+Checked  data/test/1-test-video.avi   283  lapsed: 0.7129976749420166
+Checked  data/test/1-test-video.avi   284  lapsed: 0.6923062801361084
+Checked  data/test/1-test-video.avi   285  lapsed: 0.690934419631958
+Checked  data/test/1-test-video.avi   286  lapsed: 0.6986069679260254
+Checked  data/test/1-test-video.avi   287  lapsed: 0.6975278854370117
+Checked  data/test/1-test-video.avi   288  lapsed: 0.6919004917144775
+Checked  data/test/1-test-video.avi   289  lapsed: 0.6862308979034424
+Checked  data/test/1-test-video.avi   290  lapsed: 0.6926040649414062
+Checked  data/test/1-test-video.avi   291  lapsed: 0.6880521774291992
+Checked  data/test/1-test-video.avi   292  lapsed: 0.7077786922454834
+Checked  data/test/1-test-video.avi   293  lapsed: 0.6956770420074463
+Checked  data/test/1-test-video.avi   294  lapsed: 0.6877315044403076
+Checked  data/test/1-test-video.avi   295  lapsed: 0.7005765438079834
+Checked  data/test/1-test-video.avi   296  lapsed: 0.6966195106506348
+Checked  data/test/1-test-video.avi   297  lapsed: 0.7000813484191895
+Checked  data/test/1-test-video.avi   298  lapsed: 0.7006285190582275
+Checked  data/test/1-test-video.avi   299  lapsed: 0.6910231113433838
+Checked  data/test/1-test-video.avi   300  lapsed: 0.6989438533782959
+Checked  data/test/1-test-video.avi   301  lapsed: 0.7170276641845703
+Checked  data/test/1-test-video.avi   302  lapsed: 0.6915147304534912
+Checked  data/test/1-test-video.avi   303  lapsed: 0.68121337890625
+Checked  data/test/1-test-video.avi   304  lapsed: 0.6865615844726562
+Checked  data/test/1-test-video.avi   305  lapsed: 0.7036874294281006
+Checked  data/test/1-test-video.avi   306  lapsed: 0.6727197170257568
+Checked  data/test/1-test-video.avi   307  lapsed: 0.6934494972229004
+Checked  data/test/1-test-video.avi   308  lapsed: 0.6948459148406982
+Checked  data/test/1-test-video.avi   309  lapsed: 0.7008492946624756
+Checked  data/test/1-test-video.avi   310  lapsed: 0.6870870590209961
+Checked  data/test/1-test-video.avi   311  lapsed: 0.6934618949890137
+Checked  data/test/1-test-video.avi   312  lapsed: 0.6905293464660645
+Checked  data/test/1-test-video.avi   313  lapsed: 0.7085700035095215
+Checked  data/test/1-test-video.avi   314  lapsed: 0.6934518814086914
+Checked  data/test/1-test-video.avi   315  lapsed: 0.6966841220855713
+Checked  data/test/1-test-video.avi   316  lapsed: 0.6793045997619629
+Checked  data/test/1-test-video.avi   317  lapsed: 0.6802487373352051
+Checked  data/test/1-test-video.avi   318  lapsed: 0.694678544998169
+Checked  data/test/1-test-video.avi   319  lapsed: 0.6867280006408691
+Checked  data/test/1-test-video.avi   320  lapsed: 0.6797640323638916
+Checked  data/test/1-test-video.avi   321  lapsed: 0.7252333164215088
+Checked  data/test/1-test-video.avi   322  lapsed: 0.7055230140686035
+Checked  data/test/1-test-video.avi   323  lapsed: 0.7018873691558838
+Checked  data/test/1-test-video.avi   324  lapsed: 0.700706958770752
+Checked  data/test/1-test-video.avi   325  lapsed: 0.6909875869750977
+Checked  data/test/1-test-video.avi   326  lapsed: 0.6860837936401367
+Checked  data/test/1-test-video.avi   327  lapsed: 0.6992533206939697
+Checked  data/test/1-test-video.avi   328  lapsed: 0.6876888275146484
+Checked  data/test/1-test-video.avi   329  lapsed: 0.6811258792877197
+Checked  data/test/1-test-video.avi   330  lapsed: 0.6982252597808838
+Checked  data/test/1-test-video.avi   331  lapsed: 0.6917731761932373
+Checked  data/test/1-test-video.avi   332  lapsed: 0.6921911239624023
+Checked  data/test/1-test-video.avi   333  lapsed: 0.703364372253418
+Checked  data/test/1-test-video.avi   334  lapsed: 0.6769022941589355
+Elapsed time = 0.6997926235198975
+[{'x1': 528, 'x2': 656, 'y1': 320, 'y2': 336, 'class': 'W_HUMP', 'prob': 0.8174691}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   336  lapsed: 0.6934888362884521
+Elapsed time = 0.691535234451294
+[{'x1': 528, 'x2': 672, 'y1': 320, 'y2': 336, 'class': 'W_HUMP', 'prob': 0.84039164}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   338  lapsed: 0.6869220733642578
+Checked  data/test/1-test-video.avi   339  lapsed: 0.6850132942199707
+Checked  data/test/1-test-video.avi   340  lapsed: 0.7028999328613281
+Checked  data/test/1-test-video.avi   341  lapsed: 0.6807742118835449
+Checked  data/test/1-test-video.avi   342  lapsed: 0.7044711112976074
+Checked  data/test/1-test-video.avi   343  lapsed: 0.6976931095123291
+Checked  data/test/1-test-video.avi   344  lapsed: 0.6975173950195312
+Checked  data/test/1-test-video.avi   345  lapsed: 0.6975984573364258
+Checked  data/test/1-test-video.avi   346  lapsed: 0.6858880519866943
+Checked  data/test/1-test-video.avi   347  lapsed: 0.6884684562683105
+Checked  data/test/1-test-video.avi   348  lapsed: 0.6790025234222412
+Checked  data/test/1-test-video.avi   349  lapsed: 0.6931967735290527
+Elapsed time = 0.691399335861206
+[{'x1': 368, 'x2': 416, 'y1': 320, 'y2': 384, 'class': 'VTL_GREEN', 'prob': 0.8355611}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   351  lapsed: 0.685554027557373
+Checked  data/test/1-test-video.avi   352  lapsed: 0.6957080364227295
+Checked  data/test/1-test-video.avi   353  lapsed: 0.6876142024993896
+Checked  data/test/1-test-video.avi   354  lapsed: 0.6869635581970215
+Checked  data/test/1-test-video.avi   355  lapsed: 0.7038886547088623
+Checked  data/test/1-test-video.avi   356  lapsed: 0.6950232982635498
+Elapsed time = 0.711716890335083
+[{'x1': 432, 'x2': 704, 'y1': 336, 'y2': 384, 'class': 'W_HUMP', 'prob': 0.86415374}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   358  lapsed: 0.6826076507568359
+Elapsed time = 0.7022686004638672
+[{'x1': 416, 'x2': 688, 'y1': 336, 'y2': 384, 'class': 'W_HUMP', 'prob': 0.8068603}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Elapsed time = 0.697404146194458
+[{'x1': 416, 'x2': 704, 'y1': 336, 'y2': 400, 'class': 'W_HUMP', 'prob': 0.82066655}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   361  lapsed: 0.7110967636108398
+Checked  data/test/1-test-video.avi   362  lapsed: 0.6939756870269775
+Checked  data/test/1-test-video.avi   363  lapsed: 0.6773676872253418
+Checked  data/test/1-test-video.avi   364  lapsed: 0.7041172981262207
+Checked  data/test/1-test-video.avi   365  lapsed: 0.7055139541625977
+Checked  data/test/1-test-video.avi   366  lapsed: 0.6962006092071533
+Checked  data/test/1-test-video.avi   367  lapsed: 0.7106525897979736
+Checked  data/test/1-test-video.avi   368  lapsed: 0.6896476745605469
+Elapsed time = 0.6925959587097168
+[{'x1': 448, 'x2': 672, 'y1': 368, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.8389103}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Elapsed time = 0.7006001472473145
+[{'x1': 352, 'x2': 464, 'y1': 384, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.91688097}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Checked  data/test/1-test-video.avi   371  lapsed: 0.7023904323577881
+Checked  data/test/1-test-video.avi   372  lapsed: 0.7061460018157959
+Checked  data/test/1-test-video.avi   373  lapsed: 0.7014997005462646
+Checked  data/test/1-test-video.avi   374  lapsed: 0.6913795471191406
+Checked  data/test/1-test-video.avi   375  lapsed: 0.6868786811828613
+Checked  data/test/1-test-video.avi   376  lapsed: 0.7044532299041748
+Checked  data/test/1-test-video.avi   377  lapsed: 0.6925201416015625
+Checked  data/test/1-test-video.avi   378  lapsed: 0.7073171138763428
+Checked  data/test/1-test-video.avi   379  lapsed: 0.686427116394043
+Checked  data/test/1-test-video.avi   380  lapsed: 0.6986544132232666
+Checked  data/test/1-test-video.avi   381  lapsed: 0.6913483142852783
+Checked  data/test/1-test-video.avi   382  lapsed: 0.698204517364502
+Checked  data/test/1-test-video.avi   383  lapsed: 0.6958103179931641
+Checked  data/test/1-test-video.avi   384  lapsed: 0.6861340999603271
+Checked  data/test/1-test-video.avi   385  lapsed: 0.697049617767334
+Checked  data/test/1-test-video.avi   386  lapsed: 0.6938815116882324
+Checked  data/test/1-test-video.avi   387  lapsed: 0.6739964485168457
+Checked  data/test/1-test-video.avi   388  lapsed: 0.7083430290222168
+Checked  data/test/1-test-video.avi   389  lapsed: 0.6997661590576172
+Checked  data/test/1-test-video.avi   390  lapsed: 0.694312572479248
+Checked  data/test/1-test-video.avi   391  lapsed: 0.6932680606842041
+Checked  data/test/1-test-video.avi   392  lapsed: 0.6874232292175293
+Checked  data/test/1-test-video.avi   393  lapsed: 0.6870319843292236
+Checked  data/test/1-test-video.avi   394  lapsed: 0.6889388561248779
+Checked  data/test/1-test-video.avi   395  lapsed: 0.7091190814971924
+Checked  data/test/1-test-video.avi   396  lapsed: 0.7056417465209961
+Checked  data/test/1-test-video.avi   397  lapsed: 0.6955268383026123
+Checked  data/test/1-test-video.avi   398  lapsed: 0.6945219039916992
+Checked  data/test/1-test-video.avi   399  lapsed: 0.6995673179626465
+Checked  data/test/1-test-video.avi   400  lapsed: 0.7039902210235596
+Checked  data/test/1-test-video.avi   401  lapsed: 0.6924898624420166
+Checked  data/test/1-test-video.avi   402  lapsed: 0.6959865093231201
+Checked  data/test/1-test-video.avi   403  lapsed: 0.6953985691070557
+Checked  data/test/1-test-video.avi   404  lapsed: 0.6950356960296631
+Checked  data/test/1-test-video.avi   405  lapsed: 0.6861989498138428
+Checked  data/test/1-test-video.avi   406  lapsed: 0.7058353424072266
+Checked  data/test/1-test-video.avi   407  lapsed: 0.6984148025512695
+Checked  data/test/1-test-video.avi   408  lapsed: 0.7076878547668457
+Checked  data/test/1-test-video.avi   409  lapsed: 0.6975059509277344
+Checked  data/test/1-test-video.avi   410  lapsed: 0.6909492015838623
+Checked  data/test/1-test-video.avi   411  lapsed: 0.7013158798217773
+Checked  data/test/1-test-video.avi   412  lapsed: 0.7313001155853271
+Checked  data/test/1-test-video.avi   413  lapsed: 0.6836683750152588
+Checked  data/test/1-test-video.avi   414  lapsed: 0.7056889533996582
+Checked  data/test/1-test-video.avi   415  lapsed: 0.6988136768341064
+Checked  data/test/1-test-video.avi   416  lapsed: 0.683347225189209
+Checked  data/test/1-test-video.avi   417  lapsed: 0.6960198879241943
+Checked  data/test/1-test-video.avi   418  lapsed: 0.7017781734466553
+Checked  data/test/1-test-video.avi   419  lapsed: 0.696152925491333
+Checked  data/test/1-test-video.avi   420  lapsed: 0.701143741607666
+Checked  data/test/1-test-video.avi   421  lapsed: 0.6979782581329346
+Checked  data/test/1-test-video.avi   422  lapsed: 0.692988395690918
+Checked  data/test/1-test-video.avi   423  lapsed: 0.7020127773284912
+Elapsed time = 0.6948611736297607
+[{'x1': 608, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.98105145}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Elapsed time = 0.6897082328796387
+[{'x1': 608, 'x2': 704, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.9572649}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: nan
+mAP = nan
+Elapsed time = 0.687528133392334
+[{'x1': 608, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.9666285}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.5
+mAP = nan
+Elapsed time = 0.6880502700805664
+[{'x1': 608, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.92537105}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.5
+mAP = nan
+Elapsed time = 0.707331657409668
+[{'x1': 608, 'x2': 704, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.9029738}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.5
+mAP = nan
+Checked  data/test/1-test-video.avi   429  lapsed: 0.6860826015472412
+Elapsed time = 0.687964677810669
+[{'x1': 592, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.869731}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.5178571428571428
+mAP = nan
+Elapsed time = 0.6806244850158691
+[{'x1': 592, 'x2': 672, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.9224442}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.5592857142857143
+mAP = nan
+Elapsed time = 0.7059543132781982
+[{'x1': 592, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.95543885}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.5930555555555554
+mAP = nan
+Elapsed time = 0.6961002349853516
+[{'x1': 576, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.88050073}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6083333333333333
+mAP = nan
+Elapsed time = 0.6732707023620605
+[{'x1': 576, 'x2': 672, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.9289095}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6343614718614718
+mAP = nan
+Elapsed time = 0.6978480815887451
+[{'x1': 576, 'x2': 672, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.9118284}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6472101972101973
+mAP = nan
+Elapsed time = 0.6845524311065674
+[{'x1': 576, 'x2': 672, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.86949086}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6594122544122545
+mAP = nan
+Elapsed time = 0.6863555908203125
+[{'x1': 560, 'x2': 672, 'y1': 288, 'y2': 304, 'class': 'W_HUMP', 'prob': 0.808418}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6470847334483697
+mAP = nan
+Checked  data/test/1-test-video.avi   438  lapsed: 0.7113561630249023
+Checked  data/test/1-test-video.avi   439  lapsed: 0.676816463470459
+Checked  data/test/1-test-video.avi   440  lapsed: 0.7060670852661133
+Checked  data/test/1-test-video.avi   441  lapsed: 0.7025229930877686
+Elapsed time = 0.6866250038146973
+[{'x1': 544, 'x2': 672, 'y1': 288, 'y2': 320, 'class': 'W_HUMP', 'prob': 0.8006993}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6386155511155511
+mAP = nan
+Elapsed time = 0.702883243560791
+[{'x1': 544, 'x2': 672, 'y1': 288, 'y2': 320, 'class': 'W_HUMP', 'prob': 0.88456804}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6531160589689018
+mAP = nan
+Elapsed time = 0.6998019218444824
+[{'x1': 528, 'x2': 656, 'y1': 288, 'y2': 320, 'class': 'W_HUMP', 'prob': 0.8836883}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6663133967481794
+mAP = nan
+Elapsed time = 0.6901907920837402
+[{'x1': 528, 'x2': 656, 'y1': 288, 'y2': 320, 'class': 'W_HUMP', 'prob': 0.94642234}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6839335664335664
+mAP = nan
+Elapsed time = 0.7072098255157471
+[{'x1': 512, 'x2': 656, 'y1': 288, 'y2': 320, 'class': 'W_HUMP', 'prob': 0.9130693}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6946615118949677
+mAP = nan
+Elapsed time = 0.691605806350708
+[{'x1': 512, 'x2': 656, 'y1': 288, 'y2': 320, 'class': 'W_HUMP', 'prob': 0.91181684}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7045615972519087
+mAP = nan
+Checked  data/test/1-test-video.avi   448  lapsed: 0.6994485855102539
+Elapsed time = 0.6939921379089355
+[{'x1': 496, 'x2': 656, 'y1': 288, 'y2': 320, 'class': 'W_HUMP', 'prob': 0.82942057}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7073495782237613
+mAP = nan
+Checked  data/test/1-test-video.avi   450  lapsed: 0.6936988830566406
+Checked  data/test/1-test-video.avi   451  lapsed: 0.6951897144317627
+Checked  data/test/1-test-video.avi   452  lapsed: 0.6921555995941162
+Checked  data/test/1-test-video.avi   453  lapsed: 0.7032382488250732
+Elapsed time = 0.7038867473602295
+[{'x1': 480, 'x2': 640, 'y1': 304, 'y2': 336, 'class': 'W_HUMP', 'prob': 0.8307069}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7103666119459886
+mAP = nan
+Elapsed time = 0.6904776096343994
+[{'x1': 464, 'x2': 640, 'y1': 304, 'y2': 336, 'class': 'W_HUMP', 'prob': 0.8354236}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7135387575391655
+mAP = nan
+Elapsed time = 0.6916964054107666
+[{'x1': 464, 'x2': 640, 'y1': 304, 'y2': 352, 'class': 'W_HUMP', 'prob': 0.9243375}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7259824954996125
+mAP = nan
+Elapsed time = 0.6933090686798096
+[{'x1': 448, 'x2': 640, 'y1': 304, 'y2': 352, 'class': 'W_HUMP', 'prob': 0.96734935}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7448163642121497
+mAP = nan
+Elapsed time = 0.7037477493286133
+[{'x1': 464, 'x2': 640, 'y1': 304, 'y2': 352, 'class': 'W_HUMP', 'prob': 0.9814377}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7829831655609014
+mAP = nan
+Checked  data/test/1-test-video.avi   459  lapsed: 0.6895017623901367
+Checked  data/test/1-test-video.avi   460  lapsed: 0.6814301013946533
+Elapsed time = 0.6913726329803467
+[{'x1': 416, 'x2': 640, 'y1': 320, 'y2': 368, 'class': 'W_HUMP', 'prob': 0.8271672}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7838628936065081
+mAP = nan
+Elapsed time = 0.7056596279144287
+[{'x1': 416, 'x2': 640, 'y1': 320, 'y2': 384, 'class': 'W_HUMP', 'prob': 0.8135496}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7828784379097272
+mAP = nan
+Elapsed time = 0.6905717849731445
+[{'x1': 416, 'x2': 656, 'y1': 320, 'y2': 384, 'class': 'W_HUMP', 'prob': 0.9498982}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7906618349680019
+mAP = nan
+Elapsed time = 0.6991639137268066
+[{'x1': 400, 'x2': 656, 'y1': 336, 'y2': 400, 'class': 'W_HUMP', 'prob': 0.9574302}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.8027531416341205
+mAP = nan
+Elapsed time = 0.690767765045166
+[{'x1': 400, 'x2': 656, 'y1': 336, 'y2': 400, 'class': 'W_HUMP', 'prob': 0.9684691}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.8134267551162605
+mAP = nan
+Elapsed time = 0.6951320171356201
+[{'x1': 400, 'x2': 656, 'y1': 336, 'y2': 400, 'class': 'W_HUMP', 'prob': 0.9359286}, {'x1': 592, 'x2': 720, 'y1': 272, 'y2': 288, 'class': 'W_AHEAD', 'prob': 0.8202731}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.8192235940394248
+mAP = nan
+Elapsed time = 0.6998147964477539
+[{'x1': 384, 'x2': 656, 'y1': 352, 'y2': 416, 'class': 'W_HUMP', 'prob': 0.91555333}, {'x1': 592, 'x2': 704, 'y1': 272, 'y2': 288, 'class': 'W_AHEAD', 'prob': 0.9377708}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.8228895027583569
+mAP = nan
+Elapsed time = 0.6788387298583984
+[{'x1': 592, 'x2': 720, 'y1': 272, 'y2': 288, 'class': 'W_AHEAD', 'prob': 0.9755392}, {'x1': 384, 'x2': 656, 'y1': 352, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.9520911}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: nan
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7896001638975707
+mAP = nan
+Elapsed time = 0.6935310363769531
+[{'x1': 384, 'x2': 656, 'y1': 352, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.9535165}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.16666666666666666
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7599834408512195
+mAP = nan
+Elapsed time = 0.7010939121246338
+[{'x1': 368, 'x2': 624, 'y1': 368, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.9714391}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.2857142857142857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.7116501284390145
+mAP = nan
+Elapsed time = 0.698084831237793
+[{'x1': 352, 'x2': 640, 'y1': 368, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.9330841}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.375
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.691991821497241
+mAP = nan
+Elapsed time = 0.6901841163635254
+[{'x1': 336, 'x2': 656, 'y1': 384, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.87705064}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.4444444444444444
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Checked  data/test/1-test-video.avi   473  lapsed: 0.6971302032470703
+Checked  data/test/1-test-video.avi   474  lapsed: 0.7094244956970215
+Elapsed time = 0.7008514404296875
+[{'x1': 576, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_AHEAD', 'prob': 0.82602644}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.45454545454545453
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6932737827301025
+[{'x1': 560, 'x2': 704, 'y1': 288, 'y2': 304, 'class': 'W_AHEAD', 'prob': 0.9887911}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.5833333333333334
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.7001163959503174
+[{'x1': 544, 'x2': 704, 'y1': 288, 'y2': 304, 'class': 'W_AHEAD', 'prob': 0.99530894}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.6703296703296702
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6842131614685059
+[{'x1': 544, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_AHEAD', 'prob': 0.99646425}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.7321428571428571
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6901533603668213
+[{'x1': 544, 'x2': 688, 'y1': 288, 'y2': 304, 'class': 'W_AHEAD', 'prob': 0.9593344}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.7555555555555555
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Checked  data/test/1-test-video.avi   480  lapsed: 0.6821746826171875
+Checked  data/test/1-test-video.avi   481  lapsed: 0.6916799545288086
+Elapsed time = 0.6856112480163574
+[{'x1': 528, 'x2': 688, 'y1': 304, 'y2': 320, 'class': 'W_AHEAD', 'prob': 0.9537874}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.7329411764705882
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6788504123687744
+[{'x1': 528, 'x2': 672, 'y1': 304, 'y2': 320, 'class': 'W_AHEAD', 'prob': 0.9924751}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.7727272727272727
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.684558629989624
+[{'x1': 528, 'x2': 672, 'y1': 304, 'y2': 320, 'class': 'W_AHEAD', 'prob': 0.9485931}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.7810672514619884
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Checked  data/test/1-test-video.avi   485  lapsed: 0.6781606674194336
+Elapsed time = 0.6761701107025146
+[{'x1': 512, 'x2': 672, 'y1': 304, 'y2': 336, 'class': 'W_AHEAD', 'prob': 0.93423665}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.7833333333333332
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Checked  data/test/1-test-video.avi   487  lapsed: 0.7015912532806396
+Checked  data/test/1-test-video.avi   488  lapsed: 0.6848959922790527
+Checked  data/test/1-test-video.avi   489  lapsed: 0.6947789192199707
+Elapsed time = 0.6906509399414062
+[{'x1': 480, 'x2': 688, 'y1': 320, 'y2': 336, 'class': 'W_AHEAD', 'prob': 0.9834669}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.7479901051329623
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Checked  data/test/1-test-video.avi   491  lapsed: 0.6944272518157959
+Elapsed time = 0.6832864284515381
+[{'x1': 496, 'x2': 688, 'y1': 320, 'y2': 352, 'class': 'W_AHEAD', 'prob': 0.9952075}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.778792270531401
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6891117095947266
+[{'x1': 464, 'x2': 688, 'y1': 320, 'y2': 352, 'class': 'W_AHEAD', 'prob': 0.9967855}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8040015540015539
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Checked  data/test/1-test-video.avi   494  lapsed: 0.7112376689910889
+Elapsed time = 0.7012612819671631
+[{'x1': 464, 'x2': 672, 'y1': 336, 'y2': 368, 'class': 'W_AHEAD', 'prob': 0.9964311}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8249579831932774
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6958210468292236
+[{'x1': 464, 'x2': 672, 'y1': 336, 'y2': 368, 'class': 'W_AHEAD', 'prob': 0.99366015}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8426055426055427
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6873281002044678
+[{'x1': 448, 'x2': 704, 'y1': 336, 'y2': 368, 'class': 'W_AHEAD', 'prob': 0.86749214}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8375441322809742
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.71047043800354
+[{'x1': 432, 'x2': 688, 'y1': 336, 'y2': 384, 'class': 'W_AHEAD', 'prob': 0.9824989}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8476629072681707
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6939272880554199
+[{'x1': 432, 'x2': 704, 'y1': 336, 'y2': 384, 'class': 'W_AHEAD', 'prob': 0.9489926}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.850129477078188
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6868858337402344
+[{'x1': 432, 'x2': 688, 'y1': 352, 'y2': 384, 'class': 'W_AHEAD', 'prob': 0.96629757}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8553356365856366
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6948649883270264
+[{'x1': 416, 'x2': 720, 'y1': 352, 'y2': 400, 'class': 'W_AHEAD', 'prob': 0.9841875}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8677700792492324
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.6829173564910889
+[{'x1': 400, 'x2': 704, 'y1': 352, 'y2': 400, 'class': 'W_AHEAD', 'prob': 0.99218994}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8786028904315348
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Elapsed time = 0.682293176651001
+[{'x1': 384, 'x2': 720, 'y1': 352, 'y2': 400, 'class': 'W_AHEAD', 'prob': 0.8624114}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6861150484609427
+mAP = nan
+Checked  data/test/1-test-video.avi   504  lapsed: 0.6896853446960449
+Checked  data/test/1-test-video.avi   505  lapsed: 0.6905193328857422
+Checked  data/test/1-test-video.avi   506  lapsed: 0.6898536682128906
+Checked  data/test/1-test-video.avi   507  lapsed: 0.6908280849456787
+Elapsed time = 0.6843891143798828
+[{'x1': 384, 'x2': 704, 'y1': 368, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.8148971}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6846017357652335
+mAP = nan
+Checked  data/test/1-test-video.avi   509  lapsed: 0.7076883316040039
+Elapsed time = 0.6953537464141846
+[{'x1': 368, 'x2': 656, 'y1': 384, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.85436493}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6806711768921376
+mAP = nan
+Elapsed time = 0.6938343048095703
+[{'x1': 384, 'x2': 640, 'y1': 384, 'y2': 432, 'class': 'W_HUMP', 'prob': 0.8999844}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.819613821328201
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   512  lapsed: 0.6953415870666504
+Checked  data/test/1-test-video.avi   513  lapsed: 0.7175569534301758
+Checked  data/test/1-test-video.avi   514  lapsed: 0.6875221729278564
+Checked  data/test/1-test-video.avi   515  lapsed: 0.7044758796691895
+Checked  data/test/1-test-video.avi   516  lapsed: 0.7068910598754883
+Checked  data/test/1-test-video.avi   517  lapsed: 0.684363842010498
+Checked  data/test/1-test-video.avi   518  lapsed: 0.6982388496398926
+Checked  data/test/1-test-video.avi   519  lapsed: 0.6836116313934326
+Checked  data/test/1-test-video.avi   520  lapsed: 0.7069504261016846
+Checked  data/test/1-test-video.avi   521  lapsed: 0.7000415325164795
+Checked  data/test/1-test-video.avi   522  lapsed: 0.6935060024261475
+Checked  data/test/1-test-video.avi   523  lapsed: 0.705096960067749
+Checked  data/test/1-test-video.avi   524  lapsed: 0.6931345462799072
+Checked  data/test/1-test-video.avi   525  lapsed: 0.6973361968994141
+Checked  data/test/1-test-video.avi   526  lapsed: 0.6859955787658691
+Checked  data/test/1-test-video.avi   527  lapsed: 0.6810672283172607
+Checked  data/test/1-test-video.avi   528  lapsed: 0.6882097721099854
+Checked  data/test/1-test-video.avi   529  lapsed: 0.6969380378723145
+Checked  data/test/1-test-video.avi   530  lapsed: 0.6916210651397705
+Checked  data/test/1-test-video.avi   531  lapsed: 0.6760168075561523
+Checked  data/test/1-test-video.avi   532  lapsed: 0.6974890232086182
+Checked  data/test/1-test-video.avi   533  lapsed: 0.6777973175048828
+Checked  data/test/1-test-video.avi   534  lapsed: 0.6870732307434082
+Checked  data/test/1-test-video.avi   535  lapsed: 0.6940171718597412
+Checked  data/test/1-test-video.avi   536  lapsed: 0.6887679100036621
+Elapsed time = 0.6891605854034424
+[{'x1': 704, 'x2': 800, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.94935036}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8197390199094007
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6870200634002686
+[{'x1': 704, 'x2': 784, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.99595284}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8200745521846446
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6799845695495605
+[{'x1': 704, 'x2': 800, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.9982412}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8205895760386435
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6954734325408936
+[{'x1': 704, 'x2': 800, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.9918166}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.82125763846384
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6939840316772461
+[{'x1': 704, 'x2': 784, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.90411943}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8220559968883899
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6963002681732178
+[{'x1': 688, 'x2': 784, 'y1': 272, 'y2': 304, 'class': 'HUMP', 'prob': 0.9314884}]
+HUMP AP: nan
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   543  lapsed: 0.7030529975891113
+Checked  data/test/1-test-video.avi   544  lapsed: 0.7044029235839844
+Checked  data/test/1-test-video.avi   545  lapsed: 0.6974678039550781
+Checked  data/test/1-test-video.avi   546  lapsed: 0.7048051357269287
+Checked  data/test/1-test-video.avi   547  lapsed: 0.6977436542510986
+Checked  data/test/1-test-video.avi   548  lapsed: 0.6803569793701172
+Elapsed time = 0.6823956966400146
+[{'x1': 704, 'x2': 816, 'y1': 288, 'y2': 320, 'class': 'HUMP', 'prob': 0.8155027}]
+HUMP AP: 0.03571428571428571
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   550  lapsed: 0.6798245906829834
+Checked  data/test/1-test-video.avi   551  lapsed: 0.6873173713684082
+Checked  data/test/1-test-video.avi   552  lapsed: 0.6923937797546387
+Checked  data/test/1-test-video.avi   553  lapsed: 0.6843953132629395
+Elapsed time = 0.6841230392456055
+[{'x1': 688, 'x2': 816, 'y1': 288, 'y2': 336, 'class': 'HUMP', 'prob': 0.83542734}]
+HUMP AP: 0.06666666666666667
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.7030489444732666
+[{'x1': 688, 'x2': 800, 'y1': 288, 'y2': 336, 'class': 'HUMP', 'prob': 0.9409157}]
+HUMP AP: 0.09375
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   556  lapsed: 0.6844954490661621
+Checked  data/test/1-test-video.avi   557  lapsed: 0.6850447654724121
+Checked  data/test/1-test-video.avi   558  lapsed: 0.7011935710906982
+Checked  data/test/1-test-video.avi   559  lapsed: 0.6911005973815918
+Checked  data/test/1-test-video.avi   560  lapsed: 0.6720778942108154
+Checked  data/test/1-test-video.avi   561  lapsed: 0.6743309497833252
+Checked  data/test/1-test-video.avi   562  lapsed: 0.6984732151031494
+Checked  data/test/1-test-video.avi   563  lapsed: 0.6791641712188721
+Checked  data/test/1-test-video.avi   564  lapsed: 0.6856448650360107
+Checked  data/test/1-test-video.avi   565  lapsed: 0.692314863204956
+Checked  data/test/1-test-video.avi   566  lapsed: 0.7122659683227539
+Checked  data/test/1-test-video.avi   567  lapsed: 0.691028356552124
+Checked  data/test/1-test-video.avi   568  lapsed: 0.6960630416870117
+Checked  data/test/1-test-video.avi   569  lapsed: 0.6865489482879639
+Checked  data/test/1-test-video.avi   570  lapsed: 0.6735622882843018
+Checked  data/test/1-test-video.avi   571  lapsed: 0.6930205821990967
+Checked  data/test/1-test-video.avi   572  lapsed: 0.6857810020446777
+Checked  data/test/1-test-video.avi   573  lapsed: 0.6951367855072021
+Checked  data/test/1-test-video.avi   574  lapsed: 0.6994822025299072
+Checked  data/test/1-test-video.avi   575  lapsed: 0.6857962608337402
+Elapsed time = 0.6971850395202637
+[{'x1': 480, 'x2': 688, 'y1': 320, 'y2': 400, 'class': 'HUMP', 'prob': 0.92395276}]
+HUMP AP: 0.12215909090909091
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6949295997619629
+[{'x1': 464, 'x2': 672, 'y1': 320, 'y2': 384, 'class': 'HUMP', 'prob': 0.96721286}]
+HUMP AP: 0.1365079365079365
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6888961791992188
+[{'x1': 464, 'x2': 672, 'y1': 336, 'y2': 400, 'class': 'HUMP', 'prob': 0.9935061}]
+HUMP AP: 0.18611111111111112
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.700423002243042
+[{'x1': 480, 'x2': 672, 'y1': 336, 'y2': 416, 'class': 'HUMP', 'prob': 0.86374646}]
+HUMP AP: 0.19586466165413535
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.68416428565979
+[{'x1': 480, 'x2': 704, 'y1': 336, 'y2': 416, 'class': 'HUMP', 'prob': 0.9946819}]
+HUMP AP: 0.2435460372960373
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6953706741333008
+[{'x1': 464, 'x2': 688, 'y1': 336, 'y2': 416, 'class': 'HUMP', 'prob': 0.99512154}]
+HUMP AP: 0.28981481481481486
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6885523796081543
+[{'x1': 480, 'x2': 688, 'y1': 336, 'y2': 416, 'class': 'HUMP', 'prob': 0.99991095}]
+HUMP AP: 0.4075556151165908
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6706018447875977
+[{'x1': 464, 'x2': 688, 'y1': 336, 'y2': 416, 'class': 'HUMP', 'prob': 0.9948342}]
+HUMP AP: 0.4395021645021645
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6874251365661621
+[{'x1': 448, 'x2': 688, 'y1': 336, 'y2': 416, 'class': 'HUMP', 'prob': 0.98893636}]
+HUMP AP: 0.4341362126245847
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6737139225006104
+[{'x1': 448, 'x2': 672, 'y1': 352, 'y2': 416, 'class': 'HUMP', 'prob': 0.81087977}]
+HUMP AP: 0.4314935064935065
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   586  lapsed: 0.6821994781494141
+Elapsed time = 0.6967639923095703
+[{'x1': 448, 'x2': 720, 'y1': 352, 'y2': 432, 'class': 'HUMP', 'prob': 0.9397569}]
+HUMP AP: 0.4266955266955267
+LINE_ZIGZAG AP: 0.8229650561498537
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   588  lapsed: 0.6849045753479004
+Elapsed time = 0.69100022315979
+[{'x1': 448, 'x2': 672, 'y1': 352, 'y2': 432, 'class': 'HUMP', 'prob': 0.9939851}]
+HUMP AP: 0.4159615888516145
+LINE_ZIGZAG AP: 0.8239678994792001
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.7095825672149658
+[{'x1': 432, 'x2': 688, 'y1': 352, 'y2': 432, 'class': 'HUMP', 'prob': 0.998985}]
+HUMP AP: 0.3877682601086856
+LINE_ZIGZAG AP: 0.8250498962703117
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6970758438110352
+[{'x1': 432, 'x2': 704, 'y1': 352, 'y2': 416, 'class': 'HUMP', 'prob': 0.93832755}]
+HUMP AP: 0.38395705172020966
+LINE_ZIGZAG AP: 0.8261983728486829
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.6713860034942627
+[{'x1': 432, 'x2': 704, 'y1': 368, 'y2': 432, 'class': 'HUMP', 'prob': 0.8170503}]
+HUMP AP: 0.38183120138007354
+LINE_ZIGZAG AP: 0.8274023351493576
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   593  lapsed: 0.7102558612823486
+Elapsed time = 0.6821951866149902
+[{'x1': 416, 'x2': 672, 'y1': 368, 'y2': 432, 'class': 'HUMP', 'prob': 0.83443224}]
+HUMP AP: 0.3797903850535429
+LINE_ZIGZAG AP: 0.8286522343403083
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   595  lapsed: 0.6920769214630127
+Elapsed time = 0.6709089279174805
+[{'x1': 400, 'x2': 688, 'y1': 368, 'y2': 432, 'class': 'HUMP', 'prob': 0.8442838}]
+HUMP AP: 0.3778296007398174
+LINE_ZIGZAG AP: 0.8299397681128838
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.714177131652832
+[{'x1': 400, 'x2': 560, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.8239009}]
+HUMP AP: 0.37594423120738907
+LINE_ZIGZAG AP: 0.83125771170374
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Elapsed time = 0.7004547119140625
+[{'x1': 400, 'x2': 512, 'y1': 384, 'y2': 432, 'class': 'HUMP', 'prob': 0.883241}]
+HUMP AP: 0.37413000769505234
+LINE_ZIGZAG AP: 0.8325997737876064
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   599  lapsed: 0.6873118877410889
+Checked  data/test/1-test-video.avi   600  lapsed: 0.7020504474639893
+Checked  data/test/1-test-video.avi   601  lapsed: 0.6850757598876953
+Checked  data/test/1-test-video.avi   602  lapsed: 0.6995677947998047
+Checked  data/test/1-test-video.avi   603  lapsed: 0.6965322494506836
+Checked  data/test/1-test-video.avi   604  lapsed: 0.697676420211792
+Checked  data/test/1-test-video.avi   605  lapsed: 0.7028162479400635
+Elapsed time = 0.6880006790161133
+[{'x1': 368, 'x2': 496, 'y1': 400, 'y2': 432, 'class': 'HUMP', 'prob': 0.96773326}]
+HUMP AP: 0.3709475709475709
+LINE_ZIGZAG AP: 0.8339604732447354
+HTL_GREEN AP: nan
+VTL_GREEN AP: nan
+W_AHEAD AP: 0.8755799869354857
+LINE_DOUBLE_YELLOW AP: nan
+W_X-ING AP: nan
+W_HUMP AP: 0.6727250081644258
+mAP = nan
+Checked  data/test/1-test-video.avi   607  lapsed: 0.6921787261962891
+Checked  data/test/1-test-video.avi   608  lapsed: 0.7089884281158447
+Checked  data/test/1-test-video.avi   609  lapsed: 0.6945028305053711
+Checked  data/test/1-test-video.avi   610  lapsed: 0.7054026126861572
+Checked  data/test/1-test-video.avi   611  lapsed: 0.6998460292816162
+Checked  data/test/1-test-video.avi   612  lapsed: 0.6975507736206055
+Checked  data/test/1-test-video.avi   613  lapsed: 0.6986455917358398
+Checked  data/test/1-test-video.avi   614  lapsed: 0.6835107803344727
+Checked  data/test/1-test-video.avi   615  lapsed: 0.69012451171875
+Checked  data/test/1-test-video.avi   616  lapsed: 0.6984670162200928
+Checked  data/test/1-test-video.avi   617  lapsed: 0.6899921894073486
+Checked  data/test/1-test-video.avi   618  lapsed: 0.682790994644165
+Video detected completed. Please check,  data/test/1-test-video.avi-detected.mp4
+mean average precision: nan
+

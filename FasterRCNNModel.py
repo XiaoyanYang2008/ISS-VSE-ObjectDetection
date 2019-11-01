@@ -16,6 +16,7 @@ import numpy as np
 import pandas as pd
 from optparse import OptionParser
 import pickle
+from sklearn.metrics import average_precision_score
 
 import tensorflow as tf
 from tensorflow.keras.layers import Conv2D, add, Dropout
@@ -2481,6 +2482,11 @@ class FasterRCNNModel:
         st = time.time()
         # filepath = os.path.join(img_path, img_name)
 
+        # mAP calculation
+        T = {}
+        P = {}
+        mAPs = []
+
         # img = cv2.imread(filepath)
         vs = cv2.VideoCapture(img_name)
         ok, img = vs.read()
@@ -2496,12 +2502,28 @@ class FasterRCNNModel:
         idx = 0
         while ok:
             st = time.time()
+            fx, fy = FasterRCNNModel.get_fxy(img, C)
             all_dets = self.testing_draw(C, bbox_threshold, class_mapping, class_to_color, format_img,
                                          get_real_coordinates, img, model_classifier_only, model_rpn)
 
             if len(all_dets) > 0:
                 print('Elapsed time = {}'.format(time.time() - st))
                 print(all_dets)
+                t, p = FasterRCNNModel.get_map(all_dets, FasterRCNNModel.get_bboxes(img_name, idx), (fx, fy)) # img_data['bboxes']
+                for key in t.keys():
+                    if key not in T:
+                        T[key] = []
+                        P[key] = []
+                    T[key].extend(t[key])
+                    P[key].extend(p[key])
+                all_aps = []
+                for key in T.keys():
+                    ap = average_precision_score(T[key], P[key])
+                    print('{} AP: {}'.format(key, ap))
+                    all_aps.append(ap)
+                print('mAP = {}'.format(np.mean(np.array(all_aps))))
+                mAPs.append(np.mean(np.array(all_aps)))
+
                 # cv2.imshow('img', img)
                 # cv2.waitKey(0)
             else:
@@ -2512,8 +2534,106 @@ class FasterRCNNModel:
             idx += 1
 
         print('Video detected completed. Please check, ', outfile)
+        print('mean average precision:', np.mean(np.array(mAPs)))
+
+
         video_out.release()
         vs.release()
+
+    @staticmethod
+    def get_bboxes(file, frame_index):
+        test_df = pd.read_csv(file + '-test.csv')
+        temp_df = test_df[test_df['frame'] == frame_index]
+
+        bboxes = []
+
+        for index, row in temp_df.iterrows():
+            bboxes.append({'class': row['class_name'], 'x1': int(row['x1']), 'x2': int(row['x2']), 'y1': int(row['y1']),
+                           'y2': int(row['y2'])})
+
+        return bboxes
+
+    @staticmethod
+    def get_fxy(img, C):
+        """Format image for mAP. Resize original image to C.im_size (300 in here)
+
+        Args:
+        	img: cv2 image
+        	C: config
+
+        Returns:
+        	img: Scaled and normalized image with expanding dimension
+        	fx: ratio for width scaling
+        	fy: ratio for height scaling
+        """
+
+        img_min_side = float(C.im_size)
+        (height, width, _) = img.shape
+
+        if width <= height:
+            f = img_min_side / width
+            new_height = int(f * height)
+            new_width = int(img_min_side)
+        else:
+            f = img_min_side / height
+            new_width = int(f * width)
+            new_height = int(img_min_side)
+        fx = width / float(new_width)
+        fy = height / float(new_height)
+
+        return fx, fy
+
+    @staticmethod
+    def get_map(pred, gt, f):
+        T = {}
+        P = {}
+        fx, fy = f
+        for bbox in gt:
+            bbox['bbox_matched'] = False
+        pred_probs = np.array([s['prob'] for s in pred])
+        box_idx_sorted_by_prob = np.argsort(pred_probs)[::-1]
+        for box_idx in box_idx_sorted_by_prob:
+            pred_box = pred[box_idx]
+            pred_class = pred_box['class']
+            pred_x1 = pred_box['x1']
+            pred_x2 = pred_box['x2']
+            pred_y1 = pred_box['y1']
+            pred_y2 = pred_box['y2']
+            pred_prob = pred_box['prob']
+            if pred_class not in P:
+                P[pred_class] = []
+                T[pred_class] = []
+            P[pred_class].append(pred_prob)
+            found_match = False
+            for gt_box in gt:
+                gt_class = gt_box['class']
+                gt_x1 = gt_box['x1'] / fx
+                gt_x2 = gt_box['x2'] / fx
+                gt_y1 = gt_box['y1'] / fy
+                gt_y2 = gt_box['y2'] / fy
+                gt_seen = gt_box['bbox_matched']
+                if gt_class != pred_class:
+                    continue
+                if gt_seen:
+                    continue
+                iou_map = data_generators.iou((pred_x1, pred_y1, pred_x2, pred_y2), (gt_x1, gt_y1, gt_x2, gt_y2))
+                if iou_map >= 0.5:
+                    found_match = True
+                    gt_box['bbox_matched'] = True
+                    break
+                else:
+                    continue
+            T[pred_class].append(int(found_match))
+        for gt_box in gt:
+            if not gt_box['bbox_matched']:  # and not gt_box['difficult']:
+                if gt_box['class'] not in P:
+                    P[gt_box['class']] = []
+                    T[gt_box['class']] = []
+                T[gt_box['class']].append(1)
+                P[gt_box['class']].append(0)
+        # import pdb
+        # pdb.set_trace()
+        return T, P
 
     def test(self, parser):
 
@@ -2649,7 +2769,9 @@ class FasterRCNNModel:
                     int(class_to_color[key][0]), int(class_to_color[key][1]), int(class_to_color[key][2])), 2)
 
                 textLabel = '{}: {}'.format(key, int(100 * new_probs[jk]))
-                all_dets.append((key, 100 * new_probs[jk]))
+                # all_dets.append((key, 100 * new_probs[jk]))
+                det = {'x1': x1, 'x2': x2, 'y1': y1, 'y2': y2, 'class': key, 'prob': new_probs[jk]}
+                all_dets.append(det)
 
                 (retval, baseLine) = cv2.getTextSize(textLabel, cv2.FONT_HERSHEY_COMPLEX, 1, 1)
                 textOrg = (real_x1, real_y1 - 0)
@@ -2792,7 +2914,7 @@ def main():
 
     (options, args) = parser.parse_args()
 
-    os.environ["CUDA_VISIBLE_DEVICES"] = options.gpu   # for GPU selection
+    os.environ["CUDA_VISIBLE_DEVICES"] = options.gpu  # for GPU selection
 
     m = FasterRCNNModel()
     if options.mode == 'train':
@@ -2806,6 +2928,12 @@ def main():
 
     if options.mode == 'to_simple_parser':
         cvatParser.cvat_video_to_simple_csv()
+
+
+
+
+# def main():
+    # print('...',test('data/test/1-test-video.avi', 13))
 
 
 if __name__ == '__main__':

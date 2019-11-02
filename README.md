@@ -33,8 +33,8 @@ or
 2. python3 FasterRCNNModel.py -m train -p training.csv -o simple --network resnet50 --config_filename rmconfig.pickle --input_weight_path rm-model.hdf5 --output_weight_path rm-model.hdf5 &> log-train.txt
 3. tail -f log-train.txt
 
-### Quick Test Faster RCNN network training model, at least 3 hours of training later.
-1. ./test.sh    # ctrl C and escape to quit. utilize 2nd GPU as model is 6.5GB in GPU RAM.
+### Quick Test Faster RCNN network training model, only test at least 3 hours of training later.
+1. ./test.sh    # ctrl C and escape to quit. Will utilize 2nd GPU, as model is 6.5GB in GPU RAM.
 
 ### Test Video generation with Faster RCNN network model
 1. ./test-video.sh  # check *detected.mp4 under folder, data/test
@@ -54,4 +54,4 @@ note: uses pycharm 2019.1.x. pycharm 2019.2.x needs to comments out server.py in
 ### To annotate dataset in CVAT
 Please follow openCV's CVAT installation guide at https://github.com/opencv/cvat/blob/develop/cvat/apps/documentation/installation.md#ubuntu-1804-x86_64amd64 
 
-Please refer User guide at https://github.com/opencv/cvat/blob/develop/cvat/apps/documentation/user_guide.md pay attention to interpolation mode as that allows us to annotate videos with ease.
+Please refer User guide at https://github.com/opencv/cvat/blob/develop/cvat/apps/documentation/user_guide.md. Please pay attention to interpolation mode as that allows us to annotate videos much faster.

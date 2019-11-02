@@ -26,7 +26,9 @@ note: install git lfs as per https://git-lfs.github.com/
 ### Train Faster RCNN network model
 1. ./train.sh &
 2. tail -f log-train-$TIMESTAMP.txt # replace $TIMESTAMP as current timestamp. double tap in bash to list.
+
 or  
+
 1. conda activate rtav
 2. python3 FasterRCNNModel.py -m train -p training.csv -o simple --network resnet50 --config_filename rmconfig.pickle --input_weight_path rm-model.hdf5 --output_weight_path rm-model.hdf5 &> log-train.txt
 3. tail -f log-train.txt

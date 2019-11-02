@@ -12,7 +12,7 @@ Singapore roadmarks dataset
 
 note: conda's notebook package is required for jupyter notebook. If not, jupyter notebook reports "No module named 'tensorflow'" error, due to Ubuntu system python's notebook package was running instead.
 
-optional, nvidia-smi -l # to check if GPU in used.
+optional, nvidia-smi -l # to check if GPU in used during training.
 if GPU not working in tensorflow: sudo apt install cuda-10-0 nvidia-driver-430
 if cuda-10-0 not found, follows https://www.tensorflow.org/install/gpu#ubuntu_1804_cuda_10
 
